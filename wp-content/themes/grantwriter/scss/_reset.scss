@@ -1,0 +1,228 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    font-optical-sizing: auto;
+}
+html, body {
+    margin: 0px;
+    font-size: 16.5px;
+    line-height: 28px;
+    font-family:$default-font;
+    overflow-x: hidden;
+    color: $black;
+}
+a {
+    color: $pink;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 0;
+    outline: none;
+    height: auto;
+}
+%btn , input[type="submit"]{
+    text-decoration: none;
+    border: 0;
+    line-height: 50px;
+    text-align: center;
+    padding:0 28px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: $white;
+    transition: 0.3s all;
+    background-color: $black;
+    &:hover {
+        background-color: $pink;
+    }
+}
+.btn{
+    @extend %btn;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0 0 25px 0;
+    line-height: normal;
+    font-weight: 600;
+    font-family:$default-font;
+    strong {
+        font-weight: 800;font-style: italic;
+    }
+}
+
+h1 {
+    font-size:70px;
+    line-height: 80px;
+}
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+}
+h3 {
+    font-size:24px;
+    font-weight: 600;
+    @include breakpoint(md) {
+        font-size:22px;
+    }
+}
+h4 {
+    font-size:26px;
+}
+h5 {
+    font-size:23px;
+}
+h6 {
+    font-size: 20px;
+}
+p {
+    margin: 0 0 24px;
+    @include breakpoint(xl) {
+        margin: 0 0 25px;
+    }
+}
+sup {
+    font-size: 0.6em;
+}
+
+.overlay-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+.alignnone {
+    float: none;
+    margin: 0 0 15px 0px;
+    display: block;
+}
+.aligncenter {
+    float: none;
+    margin: 0 auto 15px auto;
+    display: list-item;
+}
+.main-body {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    top: 0;
+}
+sup {
+    font-size: 0.6em;
+}
+table {
+    empty-cells: show;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 15px;
+    border: 1px solid $black;
+    td {
+        padding: 0.5em 1em;
+        border-width: 0 0 0 1px;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+    th {
+        padding: 0.5em 1em;
+        border-width: 0 0 0 1px;
+        font-size: inherit;
+        margin: 0;
+        overflow: visible;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+}
+thead {
+    text-align: left;
+    vertical-align: bottom;
+    background-color: $black;
+    color: $black;
+}
+ul {
+    margin: 0px;
+    padding: 0px 0 15px 30px;
+    li {
+        margin: 0px;
+        padding: 0 0 10px;
+        list-style-type: disc;
+        list-style-position: outside;
+    }
+}
+ol {
+    margin: 0px;
+    padding: 0px 0 9px 32px;
+    li {
+        margin: 0px;
+        padding: 0 0 10px;
+        list-style-position: outside;
+        list-style: decimal;
+    }
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none; 
+    &:focus {
+        outline: none;
+    }
+}
+textarea{
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none; 
+    &:focus {
+        outline: none;
+    }
+}
+.container {
+    width: 1220px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    @include breakpoint(xl) {
+       
+    }
+    @include breakpoint(md) {
+       
+    }
+    @include breakpoint(sm) {
+        
+    }
+    @include breakpoint(xs) {
+        
+    }
+}
