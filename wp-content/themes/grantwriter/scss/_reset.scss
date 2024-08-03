@@ -59,8 +59,11 @@ strong {
     line-height: normal;
     font-weight: 600;
     font-family:$default-font;
+    letter-spacing: -1.4px;
     strong {
-        font-weight: 800;font-style: italic;
+        font-weight: 800;
+        color: $pink;
+        font-style: italic;
     }
 }
 

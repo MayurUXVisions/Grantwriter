@@ -143,6 +143,14 @@ function grantwriter_scripts() {
 
 	wp_enqueue_script( 'grantwriter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	wp_enqueue_style( 'aos-style', get_template_directory_uri() . '/css/aos.css', array(), _S_VERSION );
+	wp_enqueue_style( 'swiper-bundle-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), _S_VERSION );
+
+	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -176,3 +184,20 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//ACF Blocks
+add_action('init', 'my_acf_blocks_init');
+function my_acf_blocks_init() {
+ 
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        acf_register_block_type(array(
+            'name'              => 'home_hero',
+            'title'             => __('Home Hero'),
+            'description'       => __('A custom home hero block.'),
+            'render_template'   => 'template-parts/blocks/home-hero.php',
+            'category'          => 'formatting',
+        ));
+
+	}
+}
