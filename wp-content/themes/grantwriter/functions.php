@@ -140,11 +140,13 @@ add_action( 'widgets_init', 'grantwriter_widgets_init' );
 function grantwriter_scripts() {
 	wp_enqueue_style( 'grantwriter-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'grantwriter-style', 'rtl', 'replace' );
-
+	
+	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'grantwriter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	wp_enqueue_style( 'aos-style', get_template_directory_uri() . '/css/aos.css', array(), _S_VERSION );
 	wp_enqueue_style( 'swiper-bundle-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
@@ -192,12 +194,50 @@ function my_acf_blocks_init() {
     if( function_exists('acf_register_block_type') ) {
 
         acf_register_block_type(array(
-            'name'              => 'home_hero',
+            'name'              => 'home-hero',
             'title'             => __('Home Hero'),
             'description'       => __('A custom home hero block.'),
             'render_template'   => 'template-parts/blocks/home-hero.php',
             'category'          => 'formatting',
         ));
 
+		acf_register_block_type(array(
+            'name'              => 'trusted-partners',
+            'title'             => __('Trusted Partners'),
+            'description'       => __('A custom home hero block.'),
+            'render_template'   => 'template-parts/blocks/trusted-partners.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'experience-block',
+            'title'             => __('Experience Block'),
+            'description'       => __('A custom home hero block.'),
+            'render_template'   => 'template-parts/blocks/experience-block.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'grant-alerts',
+            'title'             => __('Grant Alerts'),
+            'description'       => __('A custom home hero block.'),
+            'render_template'   => 'template-parts/blocks/grant-alerts.php',
+            'category'          => 'formatting',
+        ));
 	}
 }
+
+
+function dev_after_theme_setup () {
+    add_theme_support('editor-styles');
+    // add styles only in editor context
+    add_editor_style( 'css/dist/gutenberg-editor.css' );
+
+    // Add support for custom line height controls.
+	add_theme_support( 'custom-line-height' );
+    add_theme_support('editor-gradient-presets');
+    add_theme_support( 'wp-block-styles' );
+    add_theme_support( 'align-wide' );
+
+}
+add_action('after_setup_theme', 'dev_after_theme_setup');

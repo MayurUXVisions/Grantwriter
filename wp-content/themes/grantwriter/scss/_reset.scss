@@ -10,8 +10,8 @@
 }
 html, body {
     margin: 0px;
-    font-size: 16.5px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 1.5;
     font-family:$default-font;
     overflow-x: hidden;
     color: $black;
@@ -29,6 +29,8 @@ img {
     outline: none;
     height: auto;
 }
+
+
 %btn , input[type="submit"]{
     text-decoration: none;
     border: 0;
@@ -210,7 +212,7 @@ textarea{
         outline: none;
     }
 }
-.container {
+.container, .alignwide {
     width: 1220px;
     max-width: 100%;
     margin: 0 auto;
@@ -228,4 +230,31 @@ textarea{
     @include breakpoint(xs) {
         
     }
+}
+
+
+/* Gutenberg Style */
+.wp-block-button__link {
+    font-family: $Palatino_Regular;
+    font-size: 14px;
+    border-width: 1px !important;
+    padding: 10px 48px !important;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+.wp-block-media-text {
+    grid-template-columns: 58% 1fr;
+}
+.wp-block-media-text.has-media-on-the-right {
+    grid-template-columns: 1fr 60%;
+}
+.wp-block-media-text.has-media-on-the-right>.wp-block-media-text__content {
+    padding-left: 0;
+    padding-right: 15%;
+}
+.wp-block-media-text>.wp-block-media-text__content {
+    padding-left: 95px;
 }

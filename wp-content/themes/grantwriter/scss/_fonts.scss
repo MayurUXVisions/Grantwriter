@@ -1,1 +1,10 @@
 $default-font: "Urbanist", sans-serif;
+$Palatino_Regular: 'Palatino_Regular';
+
+@font-face {
+    font-family: 'Palatino_Regular';
+    src: url('../fonts/palr45w-webfont.woff2') format('woff2'),
+         url('../fonts/palr45w-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
