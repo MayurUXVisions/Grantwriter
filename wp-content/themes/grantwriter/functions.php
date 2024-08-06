@@ -204,7 +204,7 @@ function my_acf_blocks_init() {
 		acf_register_block_type(array(
             'name'              => 'trusted-partners',
             'title'             => __('Trusted Partners'),
-            'description'       => __('A custom home hero block.'),
+            'description'       => __('A custom Trusted Partners block.'),
             'render_template'   => 'template-parts/blocks/trusted-partners.php',
             'category'          => 'formatting',
         ));
@@ -212,7 +212,7 @@ function my_acf_blocks_init() {
 		acf_register_block_type(array(
             'name'              => 'experience-block',
             'title'             => __('Experience Block'),
-            'description'       => __('A custom home hero block.'),
+            'description'       => __('A custom Experience Block block.'),
             'render_template'   => 'template-parts/blocks/experience-block.php',
             'category'          => 'formatting',
         ));
@@ -220,10 +220,45 @@ function my_acf_blocks_init() {
 		acf_register_block_type(array(
             'name'              => 'grant-alerts',
             'title'             => __('Grant Alerts'),
-            'description'       => __('A custom home hero block.'),
+            'description'       => __('A custom Grant Alerts block.'),
             'render_template'   => 'template-parts/blocks/grant-alerts.php',
             'category'          => 'formatting',
         ));
+
+
+		acf_register_block_type(array(
+            'name'              => 'inner-hero',
+            'title'             => __('Inner Hero'),
+            'description'       => __('A custom Inner hero block.'),
+            'render_template'   => 'template-parts/blocks/inner-hero.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'sticky-content',
+            'title'             => __('Sticky Content'),
+            'description'       => __('A custom Sticky Content block.'),
+            'render_template'   => 'template-parts/blocks/sticky-content.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'client-wins',
+            'title'             => __('Client Wins'),
+            'description'       => __('A custom Client Wins block.'),
+            'render_template'   => 'template-parts/blocks/client-wins.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'company-accolades',
+            'title'             => __('Company Accolades'),
+            'description'       => __('A custom Company Accolades block.'),
+            'render_template'   => 'template-parts/blocks/company-accolades.php',
+            'category'          => 'formatting',
+        ));
+
+		
 	}
 }
 

@@ -2,6 +2,7 @@ header {
     position: absolute;
     padding: 13px 0;
     width: 100%;
+    z-index: 1;
     .head-main {
         display: flex;
         justify-content: space-between;

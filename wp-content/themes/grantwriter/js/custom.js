@@ -25,6 +25,8 @@ AOS.init({
     once: true,
 });
 
+
+/* Trusted Logo */
 let SwiperTop = new Swiper('.trustedSwiper', {
     spaceBetween: 0,
     centeredSlides: true,
@@ -36,4 +38,73 @@ let SwiperTop = new Swiper('.trustedSwiper', {
     slidesPerView:'auto',
     allowTouchMove: false,
     disableOnInteraction: true
+});
+
+
+/* Grant Alerts */
+var carouselslider = new Swiper('.carousel-slider', {
+  spaceBetween: 0,
+  slidesPerView: 4,
+  centeredSlides: false,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  loop: true,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 2
+    },
+    640: {
+      slidesPerView: 1
+    },
+    320: {
+      slidesPerView: 1
+    }
+  }
+});
+
+/* Grant Alerts */
+var carouselslider = new Swiper('.client_wins-slider', {
+  spaceBetween: 0,
+  slidesPerView: 4,
+  centeredSlides: false,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  loop: true,
+  breakpoints: {
+    1024: {
+      slidesPerView: 4
+    },
+    768: {
+      slidesPerView: 2
+    },
+    640: {
+      slidesPerView: 1
+    },
+    320: {
+      slidesPerView: 1
+    }
+  }
 });
