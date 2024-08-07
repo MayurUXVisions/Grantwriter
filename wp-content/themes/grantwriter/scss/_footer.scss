@@ -1,0 +1,217 @@
+footer {
+    color: $white;
+    letter-spacing: 0.5px;
+
+    .footer-slider {
+        background-color: $black;
+        padding: 28px 0;
+        color: $white;
+    }
+    .footer-marquee {
+        width: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            position: relative;
+            overflow: hidden;
+            padding: 0 25px; 
+            font-weight: 600;
+            i {
+                font-weight: 200;
+            }
+        } 
+    }
+    .footer-top {
+        background-image: url(../images/footer-nine.svg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: #080A0F;
+        position: relative;
+        padding: 100px 0 84px 0;
+        &:before {
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-image: url(../images/footer-bg.png);
+            background-position: center right;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: -1;
+        }
+    }
+    .footer-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 23px;
+        .footer-logo {
+            width: 479px;
+        }
+        .line {
+            width: 89%;
+            height: 1px;
+            background-color: $pink;
+            margin-bottom: -3px;
+        }
+        .footer-social {
+            width: 268px;
+            text-align: right;
+            margin-top: -33px;
+            label {
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                font-style: italic;
+                text-align: right;
+                margin-bottom: 10px;
+                display: inline-block;
+                
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: end;
+                li {
+                    list-style-type: none;
+                    padding: 0 12px;
+                    img { 
+                        height: 27px;
+                        max-width: 26px;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    a {
+                        &:hover {
+                            img {
+                                -webkit-filter:invert(1);
+                                filter:invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer-contact-info {
+        padding-top: 40px;
+        font-weight: 300;
+        .row {
+            max-width: 622px;
+        }
+        h6 {
+            font-size: 18px;
+            color: $white;
+            font-weight: 600;
+            letter-spacing: 0; 
+            margin: 20px 0 16px 0; 
+        }
+        .footer-info {
+            background-repeat: no-repeat;
+            background-position: left top 3px;
+            background-size: 21px;
+            max-width: 240px;
+            a {
+                color: $white;
+                padding-left: 30px;
+                font-weight: 300;
+                display: inline-block;
+                &:hover {
+                    color: $pink;
+                }
+            }
+            &.address {
+                background-image: url(../images/address.svg);
+            }
+            &.call {
+                background-image: url(../images/call.svg);
+            }
+            &.email {
+                background-image: url(../images/email.svg);
+            }
+        }
+        .footer-menu {
+            padding-top: 12px;
+            padding-right: 16px;
+            ul {
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    font-size: 16px;
+                    list-style-type: none;
+                    padding-bottom: 7px;
+                    a {
+                        color: $white;
+                        &:hover {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        background-color: #000;
+        .footer-c-left {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            letter-spacing: 0;
+            span {
+                margin: 0 10px;
+            }
+            .bbb-logo {
+                margin-right: 35px;
+            }
+        }
+        .footer-c-right {
+            text-align: right;
+            ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: end;
+                li {
+                    list-style-type: none;
+                    padding: 0 15px;
+                    a {
+                        color: $white;
+                        line-height: 51px;
+                        padding: 0 5px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        &:hover {
+                            color: $pink;
+                        }
+                    }
+                    &.signin-menu {
+                        padding: 0; 
+                        margin-left: 10px;
+                        a {
+                            background: url(../images/sign-in.svg) center left 10px no-repeat;
+                            background-color: $white;
+                            color: $pink;
+                            padding: 0 21px 0 48px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

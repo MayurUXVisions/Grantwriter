@@ -40,6 +40,21 @@ let SwiperTop = new Swiper('.trustedSwiper', {
     disableOnInteraction: true
 });
 
+ 
+/* Footer Marquee */
+let FooterSwiperTop = new Swiper('.footer-marquee', {
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+  },
+  loop: true,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
 
 /* Grant Alerts */
 var carouselslider = new Swiper('.carousel-slider', {
