@@ -150,8 +150,8 @@ function grantwriter_scripts() {
 
 	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
-	
-	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
+	 
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=6455', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -232,6 +232,14 @@ function my_acf_blocks_init() {
             'description'       => __('A custom Inner hero block.'),
             'render_template'   => 'template-parts/blocks/inner-hero.php',
             'category'          => 'formatting',
+			'supports'			=> array(
+                'anchor' => false, 
+                'align'  => false,
+                'customClassName' => true,
+                'jsx' 	 => true,
+                'mode' => true,
+                'multiple' => true,
+            ),
         ));
 
 		acf_register_block_type(array(
@@ -255,6 +263,31 @@ function my_acf_blocks_init() {
             'title'             => __('Company Accolades'),
             'description'       => __('A custom Company Accolades block.'),
             'render_template'   => 'template-parts/blocks/company-accolades.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'contact-block',
+            'title'             => __('Contact Block'),
+            'description'       => __('A custom Contact Block block.'),
+            'render_template'   => 'template-parts/blocks/contact-block.php',
+            'category'          => 'formatting',
+        ));
+
+
+		acf_register_block_type(array(
+            'name'              => 'subscriber-block',
+            'title'             => __('Subscriber Block'),
+            'description'       => __('A custom Subscriber Block block.'),
+            'render_template'   => 'template-parts/blocks/subscriber-block.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'services-block',
+            'title'             => __('Services Block'),
+            'description'       => __('A custom Services Block block.'),
+            'render_template'   => 'template-parts/blocks/services-block.php',
             'category'          => 'formatting',
         ));
 

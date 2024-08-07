@@ -6,7 +6,7 @@
                 <h2>Ready-to-Write</h2>
                 <h3>Featured Grants</h3>
             </div>  
-        </div>  
+        </div>
        
         <div class="grant-alerts__slider">
         <div class="container">
