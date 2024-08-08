@@ -1,3 +1,30 @@
+jQuery(document).ready(function (e) {
+
+  jQuery(".faqs__title").click(function() {
+    // Get the associated .faqs__box for the clicked title
+    var $faqsBox = jQuery(this).closest('.faqs__box');
+
+    // Slide up all other .faqs__text elements and remove active class from their boxes
+    jQuery(".faqs__text").not(jQuery(this).next()).slideUp().each(function() {
+        jQuery(this).closest('.faqs__box').removeClass('faq-active');
+    });
+
+    // Slide down the clicked .faqs__text element
+    jQuery(this).next(".faqs__text").slideToggle(function() {
+        // Check if this .faqs__text is visible
+        if (jQuery(this).is(":visible")) {
+            // Add active class to the corresponding .faqs__box
+            $faqsBox.addClass('faq-active');
+        } else {
+            // Remove active class if this .faqs__text is hidden
+            $faqsBox.removeClass('faq-active');
+        }
+    });
+});
+
+
+});
+
 if (jQuery('#counter').length) {
     var mapcounted = 0;
     jQuery(window).scroll(function() {
@@ -20,6 +47,8 @@ if (jQuery('#counter').length) {
       }
     });
 }
+
+
 
 AOS.init({
     once: true,

@@ -291,6 +291,14 @@ function my_acf_blocks_init() {
             'category'          => 'formatting',
         ));
 
+		acf_register_block_type(array(
+            'name'              => 'faqs-block',
+            'title'             => __('Faqs Block'),
+            'description'       => __('A custom Faqs Block block.'),
+            'render_template'   => 'template-parts/blocks/faqs-block.php',
+            'category'          => 'formatting',
+        ));
+
 		
 	}
 }
