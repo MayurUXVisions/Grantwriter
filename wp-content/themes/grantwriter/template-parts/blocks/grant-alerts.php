@@ -1,6 +1,6 @@
 <section class="grant-alerts">
     
-        <div class="grant-alerts__headline">
+        <div class="grant-alerts__headline" data-aos="fade-up">
             <div class="container">
                 <div class="gradient-heading">Grant Alerts</div>
                 <h2>Ready-to-Write</h2>
@@ -8,7 +8,7 @@
             </div>  
         </div>  
        
-        <div class="grant-alerts__slider">
+        <div class="grant-alerts__slider" data-aos="fade-up">
         <div class="container">
 
         <section class="creative-carousal--hero">

@@ -25,7 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<!-- // Google Fonts -->
 
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?198923246" rel="stylesheet">
+	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?856766" rel="stylesheet">
 
 
 </head>

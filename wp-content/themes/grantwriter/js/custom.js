@@ -22,6 +22,17 @@ jQuery(document).ready(function (e) {
     });
 });
 
+setTimeout(function() { 
+  AOS.init({
+    once: true,
+    duration: 800,
+    offset: 220,
+  });
+}, 200);
+
+jQuery('.wp-block-media-text__content').attr('data-aos', 'fade-up');
+jQuery('.wp-block-media-text__media').attr('data-aos', 'fade-up');
+
 
 });
 
@@ -50,9 +61,7 @@ if (jQuery('#counter').length) {
 
 
 
-AOS.init({
-    once: true,
-});
+
 
 
 /* Trusted Logo */
@@ -119,7 +128,7 @@ var carouselslider = new Swiper('.carousel-slider', {
   }
 });
 
-/* Grant Alerts */
+/* Wins Slider */
 var carouselslider = new Swiper('.client_wins-slider', {
   spaceBetween: 0,
   slidesPerView: 4,
@@ -151,4 +160,46 @@ var carouselslider = new Swiper('.client_wins-slider', {
       slidesPerView: 1
     }
   }
+});
+
+
+/* Grant Alerts */
+var carouselslider = new Swiper('.clientExp-slider', {
+  spaceBetween: 0,
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  loop: true
+});
+
+
+/* Grant Alerts */
+
+var swiper = new Swiper(".card-carousel", {
+  effect: "cards",
+  grabCursor: true,
+  initialSlide: 0,
+  speed: 500,
+  loop: true,
+  rotate: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  loop: true
 });

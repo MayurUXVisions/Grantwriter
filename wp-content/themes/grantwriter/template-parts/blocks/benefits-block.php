@@ -1,7 +1,7 @@
 <section class="benefits__section">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up" data-aos-delay="200">
             <div class="section-title-full">
                 <h2 class="gradient-heading">Benefits</h2>
             </div>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="benefits__block">
+        <div class="benefits__block" data-aos="fade-up" data-aos-delay="300">
             <div class="row">
                 <div class="benefits__col-left">
                     <div class="row">

@@ -151,7 +151,7 @@ function grantwriter_scripts() {
 	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
 	 
-	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=6455', array(), _S_VERSION, true );
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=85246', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -292,13 +292,53 @@ function my_acf_blocks_init() {
         ));
 
 		acf_register_block_type(array(
+            'name'              => 'faqs-listing',
+            'title'             => __('Faqs Listing'),
+            'description'       => __('A custom Faq Listing.'),
+            'render_template'   => 'template-parts/blocks/faqs-listing.php',
+            'category'          => 'formatting',
+        ));
+
+
+		acf_register_block_type(array(
             'name'              => 'faqs-block',
             'title'             => __('Faqs Block'),
-            'description'       => __('A custom Faqs Block block.'),
+            'description'       => __('A custom Faq block.'),
             'render_template'   => 'template-parts/blocks/faqs-block.php',
             'category'          => 'formatting',
         ));
 
+		acf_register_block_type(array(
+            'name'              => 'benefits-block',
+            'title'             => __('Benefits Block'),
+            'description'       => __('A custom Benefits block.'),
+            'render_template'   => 'template-parts/blocks/benefits-block.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'resources-block',
+            'title'             => __('Resources Block'),
+            'description'       => __('A custom Resources Block.'),
+            'render_template'   => 'template-parts/blocks/resources-block.php',
+            'category'          => 'formatting',
+        ));
+
+		acf_register_block_type(array(
+            'name'              => 'client-experiences',
+            'title'             => __('Client Experiences'),
+            'description'       => __('A Client Experiences Block.'),
+            'render_template'   => 'template-parts/blocks/client-experiences.php',
+            'category'          => 'formatting', 
+        )); 
+
+		acf_register_block_type(array(
+            'name'              => 'subscribe-block',
+            'title'             => __('Home Subscribe Block'),
+            'description'       => __('A Subscribe Block Block.'),
+            'render_template'   => 'template-parts/blocks/home-subscribe-block.php',
+            'category'          => 'formatting', 
+        )); 
 		
 	}
 }
