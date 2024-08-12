@@ -1,0 +1,105 @@
+.service-cat-content {
+    padding: 55px 0;
+    .cat-content-shorter {
+        padding: 70px 60px 106px 121px;
+        display: flex;
+        justify-content: space-between;
+        background: url(../images/large-line.svg) bottom center no-repeat;
+        align-items: center;
+
+        .cat-text {
+            width: 49%;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            margin-top: 20px;
+            h2 {
+                font-size: 40px;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                span {
+                    color: $pink;
+                }
+            }
+        }
+        .cat-image {
+            width: 40%;
+            img {
+                border-radius: 8px;
+            }
+        }
+    }
+}
+.our-services {
+    padding: 0;
+
+    &__box {
+        padding: 35px;
+        max-width: 980px;
+        margin: 0 auto;
+        background-color: #FBFBFB;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        border: 1px solid $white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+        max-width: 380px;
+        width: 100%;
+    }
+    &__text {
+        width: calc(100% - 380px);
+        padding-left: 50px;
+
+        label {
+            font-size: 14px;
+            font-style: italic;
+            font-family: $Palatino_Regular;
+        }
+        h3 {
+            font-size: 40px;
+            letter-spacing: -0.02em;
+            font-weight: 300;
+            margin: 0 0 20px 0;
+        }
+        h4 {
+            font-family: $Palatino_Regular;
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 15px 0;
+        }
+    }
+    &__btn {
+        font-size: 18px;
+        position: relative;
+        padding-right: 45px;
+        padding-bottom: 5px;
+        &:before {
+            content: "";
+            width: calc(100% - 45px);
+            height: 1px;
+            background-color: $pink;
+            position: absolute;
+            bottom: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: 0 auto;
+            margin: auto;
+            background: url(../images/arrow.svg) center center no-repeat;
+            transition: 0.3s all;
+            width: 33px;
+            height: 33px;
+        }
+        &:hover {
+            color: $pink;
+            &:after {
+                background-image: url(../images/hover-arrow.svg) ;
+            }
+        }
+    }
+}

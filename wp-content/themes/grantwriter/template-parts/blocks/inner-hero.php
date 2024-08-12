@@ -25,4 +25,7 @@ $allowedBlocks = [ 'core/heading', 'core/paragraph'];
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round.svg" alt="" >
     </div>
 </section>
+<div class="breadcrumbs">
+    <div class="container">Home  |  <span><?php the_title(); ?></span></div>
+</div>
 

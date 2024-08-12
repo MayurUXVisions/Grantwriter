@@ -34,7 +34,7 @@ get_header();
 			</section>
 
 			<div class="breadcrumbs">
-				<div class="container">Home  |  <span>Terms of Use</span></div>
+				<div class="container">Home  |  <span><?php the_title(); ?></span></div>
 			</div>
 
 		<?php endif; ?>
