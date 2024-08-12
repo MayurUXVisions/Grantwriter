@@ -1,7 +1,7 @@
 <section class="resourcesBlock">
     <div class="container">
 
-        <div class="section-title" data-aos="fade-up" data-aos-delay="200">
+        <div class="section-title">
             <div class="section-title-full">
                 <h2 class="gradient-heading">Resources</h2>
             </div>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="resourcesBlock__main-section" data-aos="fade-up" data-aos-delay="300">
+        <div class="resourcesBlock__main-section">
             <div class="row">
                 <div class="col-md-6">
                     <div class="resourcesBlock__featured-box">
@@ -29,8 +29,9 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="resourcesBlock__listing">
+                    <div class="resourcesBlock__listing content"  id="scrollbar">
                         <div class="row">
+                            
                             <div class="col-md-6">
                                 <div class="resourcesBlock__box">
                                     <a class="overlay-link" href="#"></a>
@@ -85,6 +86,63 @@
                                     <a href="#" class="link-btn">View Resource</a>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resourcesBlock__box">
+                                    <a class="overlay-link" href="#"></a>
+                                    <div class="resourcesBlock__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/resources-img-2.jpg" alt="" ></div>
+                                    <div class="date"><span class="newg">Webinar</span> MM/DD/YYYY</div>
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing Elit.</h5>
+                                    <a href="#" class="link-btn">View Resource</a>
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>

@@ -33,7 +33,7 @@
                         <div class="faqs__text"><p>Hiring a professional grant writer offers several benefits. Our grant experts have expertise in navigating the complex grant application process, increasing your chances of securing funding. They can craft compelling narratives tailored to each grant's requirements, effectively showcasing your organization's goals and impact. Ultimately, investing in a skilled grant writer can save you time and resources while enhancing your ability to secure vital funding for your organization.</p></div>
                     </div> 
                 </div>
-                <div class="col-md-5 faqBlock-image" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-5 faqBlock-image" data-aos="fade-left" data-aos-delay="400">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/faq-image.png" alt="" >
                 </div>
             </div>

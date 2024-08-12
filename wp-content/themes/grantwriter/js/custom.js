@@ -22,6 +22,18 @@ jQuery(document).ready(function (e) {
     });
 });
 
+
+/* Custom Scroll Bar */
+(function($){
+  jQuery(window).on("load",function(){
+    
+    jQuery("#scrollbar").mCustomScrollbar({});
+    
+  });
+})(jQuery);
+/* Custom Scroll Bar */
+
+
 setTimeout(function() { 
   AOS.init({
     once: true,
@@ -60,22 +72,17 @@ if (jQuery('#counter').length) {
 }
 
 
-
-
-
-
 /* Trusted Logo */
 let SwiperTop = new Swiper('.trustedSwiper', {
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 6000,
+    speed: 5000,
     autoplay: {
       delay: 0,
     },
     loop: true,
     slidesPerView:'auto',
-    allowTouchMove: false,
-    disableOnInteraction: true
+    allowTouchMove: false
 });
 
  
@@ -83,14 +90,14 @@ let SwiperTop = new Swiper('.trustedSwiper', {
 let FooterSwiperTop = new Swiper('.footer-marquee', {
   spaceBetween: 0,
   centeredSlides: true,
-  speed: 6000,
+  speed: 5000,
   autoplay: {
     delay: 0,
+    disableOnInteraction: false,
   },
   loop: true,
   slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
+  allowTouchMove: false
 });
 
 
@@ -203,3 +210,24 @@ var swiper = new Swiper(".card-carousel", {
   },
   loop: true
 });
+
+
+function adjustContentMargin() {
+  // Get the footer element
+  var footer = document.getElementById('footer');
+  
+  // Get the height of the footer
+  var footerHeight = footer.offsetHeight;
+  
+  // Get the content element
+  var content = document.getElementById('page');
+  
+  // Add margin to the bottom of the content element equal to the footer's height
+  content.style.marginBottom = footerHeight + 'px';
+}
+
+// Adjust margin on initial load
+document.addEventListener("DOMContentLoaded", adjustContentMargin);
+
+// Adjust margin on window resize
+window.addEventListener("resize", adjustContentMargin);

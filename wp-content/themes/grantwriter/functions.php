@@ -147,9 +147,11 @@ function grantwriter_scripts() {
 	wp_enqueue_style( 'aos-style', get_template_directory_uri() . '/css/aos.css', array(), _S_VERSION );
 	wp_enqueue_style( 'swiper-bundle-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'mCustomScrollbar-css', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.min.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'mCustomScrollbar-js', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.js', array(), _S_VERSION, true ); 
 	 
 	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=85246', array(), _S_VERSION, true );
 

@@ -4,7 +4,19 @@
         background: rgb(246,246,246);
         background: linear-gradient(180deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%);
         padding: 9rem 0 1rem 0;
-        margin-top: -6rem; 
+        margin-top: -8rem; 
+        .section-title {
+            margin-bottom: 35px;
+        }
+        .gradient-heading { 
+            text-shadow: 1px 1px 2px rgb(245 245 245), 1px -2px 2px rgb(191 191 191 / 20%);
+        }
+        .section-title-right {
+            margin-top: -30px;
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
     &__block{
         width: 100%;
@@ -44,6 +56,7 @@
         }
         p{
             margin: 0;
+            letter-spacing: 0.01em;
         }
     }
     &__vert_box{

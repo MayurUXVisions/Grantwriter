@@ -10,8 +10,8 @@
  */
 
 ?>
-
-<footer>
+</div>
+<footer id="footer">
     <div class="footer-slider">
         <div class="footer-marquee swiper">
             <div class="swiper-wrapper">
