@@ -10,6 +10,42 @@
         align-items: end;
         border-radius: 0 0 80px 80px;
         background-position: center center;
+        position: relative;
+        overflow: hidden;
+    }
+    &__video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+            content: "";
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            opacity: 0.4;
+            content: "";
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block; 
+        }
     }
     &__flex {
         h1 {
@@ -116,7 +152,7 @@
 
     h2 {
         margin: 0 0 -13px 0;
-        color: $pink;
+        color: $darkpink;
         position: relative;
         strong {
             font-weight: 600;
@@ -190,6 +226,10 @@
 .grant-alerts { 
     padding: 100px 0;
     overflow: hidden;
+
+    .swiper-slide {
+        max-width: 400px;
+    }
     &__headline {
         margin-bottom: 45px;
         h2 {

@@ -9,6 +9,7 @@ header {
         align-items: center;
         .head-left {
             display: flex;
+            align-items: center;
         }
     }
     .local-grant {
@@ -23,6 +24,9 @@ header {
             left: 0;
             content: "";
             background-color: $white;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
         a {
             border-bottom: 1px solid $pink;
@@ -74,7 +78,7 @@ header {
                     position: relative;
                     padding-bottom: 4px;
                     &:hover {
-                        color: $pink;
+                        color: $white;
                         
                         &:after {
                             width: 100%;

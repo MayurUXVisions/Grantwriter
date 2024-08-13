@@ -9,7 +9,7 @@
         </div>  
        
         <div class="grant-alerts__slider" data-aos="fade-up">
-        <div class="container">
+        <div class="container1">
 
         <section class="creative-carousal--hero">
 		<div class="carousel-slider swiper-container-horizontal">
@@ -113,6 +113,7 @@
                         </div>
                     </div>
 				</div>
+                
 
 			</div>
 

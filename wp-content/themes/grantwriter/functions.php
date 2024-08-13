@@ -148,11 +148,13 @@ function grantwriter_scripts() {
 	wp_enqueue_style( 'swiper-bundle-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _S_VERSION );
     wp_enqueue_style( 'mCustomScrollbar-css', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.min.css', array(), _S_VERSION );
+    wp_enqueue_style( 'fancybox-css', get_template_directory_uri() . '/css/fancybox.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'aos-navigation', get_template_directory_uri() . '/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper-bundle-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'mCustomScrollbar-js', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.js', array(), _S_VERSION, true ); 
-	 
+	wp_enqueue_script( 'fancybox-js', get_template_directory_uri() . '/js/fancybox.js', array(), _S_VERSION, true ); 
+	  
 	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=85246', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -340,7 +342,15 @@ function my_acf_blocks_init() {
             'description'       => __('A Subscribe Block Block.'),
             'render_template'   => 'template-parts/blocks/home-subscribe-block.php',
             'category'          => 'formatting', 
-        )); 
+        ));
+        
+        acf_register_block_type(array(
+            'name'              => 'why-grantwriters',
+            'title'             => __('Why Grantwriters'),
+            'description'       => __('A Why Grantwriters Block.'),
+            'render_template'   => 'template-parts/blocks/why-grantwriters.php',
+            'category'          => 'formatting', 
+        ));
 		
 	}
 }

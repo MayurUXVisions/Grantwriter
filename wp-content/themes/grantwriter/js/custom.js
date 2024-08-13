@@ -104,7 +104,6 @@ let FooterSwiperTop = new Swiper('.footer-marquee', {
 /* Grant Alerts */
 var carouselslider = new Swiper('.carousel-slider', {
   spaceBetween: 0,
-  slidesPerView: 4,
   centeredSlides: false,
   autoplay: {
     delay: 9500,
@@ -121,7 +120,7 @@ var carouselslider = new Swiper('.carousel-slider', {
   loop: true,
   breakpoints: {
     1024: {
-      slidesPerView: 3
+      slidesPerView:'auto'
     },
     768: {
       slidesPerView: 2
@@ -173,10 +172,11 @@ var carouselslider = new Swiper('.client_wins-slider', {
 /* Grant Alerts */
 var carouselslider = new Swiper('.clientExp-slider', {
   spaceBetween: 0,
-  slidesPerView: 'auto',
+  slidesPerView: 'auto', 
   centeredSlides: false,
+  speed: 5000,
   autoplay: {
-    delay: 9500,
+    delay: 0,
     disableOnInteraction: false,
   },
   navigation: {

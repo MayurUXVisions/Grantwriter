@@ -79,7 +79,8 @@ img {
     font-size: 14px;
     font-family: $Palatino_Regular;
     text-transform: uppercase;
-    min-width: 400px; 
+    min-width: 400px;
+    letter-spacing: 0.10em;
     &.white-ghost {
         border: 1px solid $white;
         color: $white;
@@ -321,12 +322,13 @@ textarea{
 }
 
 /* Gutenberg Style */
+
 .wp-block-button__link {
     font-family: $Palatino_Regular;
     font-size: 14px;
     border-width: 1px !important;
     padding: 10px 48px !important;
-    letter-spacing: 1px;
+    letter-spacing: 0.10em; 
     &:hover {
         background-color: $black;
         color: $white;
@@ -334,7 +336,12 @@ textarea{
 }
 .wp-block-media-text {
     grid-template-columns: 58% 1fr;
-}
+    &__media {
+        img {
+            border-radius: 8px;
+        }
+    }
+} 
 .wp-block-media-text.has-media-on-the-right {
     grid-template-columns: 1fr 60%;
 }
@@ -344,6 +351,20 @@ textarea{
 }
 .wp-block-media-text>.wp-block-media-text__content {
     padding-left: 95px;
+}
+
+.got-grant-image {
+    img {
+        transform: scale(0.2) translate(0, 500px);
+        transition: 0.8s all; 
+        opacity: 0;
+    }
+    .aos-animate {
+        img {
+            transform: scale(1) translate(0, 0);
+            opacity: 1;
+        }
+    }
 }
 
 .section-title{

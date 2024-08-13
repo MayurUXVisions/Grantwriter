@@ -94,6 +94,7 @@ img {
   font-family: "Palatino_Regular";
   text-transform: uppercase;
   min-width: 400px;
+  letter-spacing: 0.1em;
 }
 .ghost-btn.white-ghost {
   border: 1px solid #ffffff;
@@ -350,7 +351,7 @@ textarea:focus {
   font-size: 14px;
   border-width: 1px !important;
   padding: 10px 48px !important;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
 }
 .wp-block-button__link:hover {
   background-color: #232323;
@@ -360,6 +361,9 @@ textarea:focus {
 .wp-block-media-text {
   -ms-grid-columns: 58% 1fr;
   grid-template-columns: 58% 1fr;
+}
+.wp-block-media-text__media img {
+  border-radius: 8px;
 }
 
 .wp-block-media-text.has-media-on-the-right {
@@ -374,6 +378,19 @@ textarea:focus {
 
 .wp-block-media-text > .wp-block-media-text__content {
   padding-left: 95px;
+}
+
+.got-grant-image img {
+  -webkit-transform: scale(0.2) translate(0, 500px);
+          transform: scale(0.2) translate(0, 500px);
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+  opacity: 0;
+}
+.got-grant-image .aos-animate img {
+  -webkit-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+  opacity: 1;
 }
 
 .section-title {
@@ -424,6 +441,9 @@ header .head-main .head-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .local-grant {
   font-size: 14px;
@@ -438,6 +458,9 @@ header .local-grant:before {
   left: 0;
   content: "";
   background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 header .local-grant a {
   border-bottom: 1px solid #F60656;
@@ -491,7 +514,7 @@ header .main-navigation ul li a {
   padding-bottom: 4px;
 }
 header .main-navigation ul li a:hover {
-  color: #F60656;
+  color: #ffffff;
 }
 header .main-navigation ul li a:hover:after {
   width: 100%;
@@ -782,6 +805,44 @@ footer .footer-copyright .footer-c-right ul li.signin-menu a {
           align-items: end;
   border-radius: 0 0 80px 80px;
   background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+.home-hero__video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-hero__video:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  content: "";
+}
+.home-hero__video:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  opacity: 0.4;
+  content: "";
+  background: rgb(0, 0, 0);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.home-hero__video video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .home-hero__flex h1 {
   margin-bottom: 14px;
@@ -896,7 +957,7 @@ footer .footer-copyright .footer-c-right ul li.signin-menu a {
 }
 .experience-block h2 {
   margin: 0 0 -13px 0;
-  color: #F60656;
+  color: #CC0B4B;
   position: relative;
 }
 .experience-block h2 strong {
@@ -963,6 +1024,9 @@ footer .footer-copyright .footer-c-right ul li.signin-menu a {
 .grant-alerts {
   padding: 100px 0;
   overflow: hidden;
+}
+.grant-alerts .swiper-slide {
+  max-width: 400px;
 }
 .grant-alerts__headline {
   margin-bottom: 45px;
@@ -2568,4 +2632,57 @@ footer .footer-copyright .footer-c-right ul li.signin-menu a {
 }
 .our-services__btn:hover:after {
   background-image: url(../images/hover-arrow.svg);
+}
+
+.why-grantwriters {
+  padding: 35px 0;
+}
+.why-grantwriters__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.why-grantwriters__left {
+  padding-right: 6%;
+  width: 40%;
+}
+.why-grantwriters__right {
+  width: 60%;
+  position: relative;
+}
+.why-grantwriters__right img {
+  width: 100%;
+  border-radius: 8px;
+}
+.why-grantwriters__right:hover .play-video:after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.why-grantwriters .ghost-btn {
+  min-width: initial;
+}
+.why-grantwriters .play-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.why-grantwriters .play-video:after {
+  position: absolute;
+  content: "";
+  background: url(../images/play.svg) center center no-repeat;
+  background-size: 85px;
+  width: 85px;
+  height: 85px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
