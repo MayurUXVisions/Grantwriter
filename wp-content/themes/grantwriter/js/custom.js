@@ -191,7 +191,20 @@ var carouselslider = new Swiper('.clientExp-slider', {
 });
 
 
-/* Grant Alerts */
+
+/* Subscribe & Never miss */
+
+jQuery(".checkout-btn").click(function(){
+  setTimeout(function () {
+    swiper.slideTo(4);
+  }, 175);
+})
+
+jQuery(".back-to-first").click(function(){
+  setTimeout(function () {
+    swiper.slideTo(0);
+  }, 175);
+})
 
 var swiper = new Swiper(".card-carousel", {
   effect: "cards",
@@ -200,6 +213,7 @@ var swiper = new Swiper(".card-carousel", {
   speed: 500,
   loop: true,
   rotate: false,
+  allowTouchMove: false,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

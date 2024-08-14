@@ -102,3 +102,28 @@ header {
         }
     }
 }
+
+.sticky-panel { 
+    position: fixed;
+    top: 70%;
+    display: flex;
+    grid-gap: 21px;
+    align-items: center;
+    z-index: 11;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    transform-origin: left top; 
+    white-space: nowrap;
+    left: 10px;
+    .sticky-link {
+        width: 62px;
+        height: 1px;
+        background-color: $black;
+    }
+    .back-to-top {
+        position: absolute;
+        bottom: -9px;
+        left: -53px;
+        transform: rotate(90deg);
+    }
+}

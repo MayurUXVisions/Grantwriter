@@ -976,6 +976,7 @@
     border-radius: 80px;
     background-color: #F7F7F7;
     position: relative;
+    display: inline-block;
     &:before {
         content: "";
         position: absolute;
@@ -1306,16 +1307,127 @@
 }
 
 
+#loader { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+  
+  .semi {
+    opacity: 0;
+    animation: fade 2s infinite;
+    animation-name: fade;
+  }
+  
+  .animated1 {
+    animation-delay: 0;
+  }
+  .animated2 {
+    animation-delay: 400ms;
+  }
+  .animated3 {
+    animation-delay: 800ms;
+  }
+  .animated4 {
+    animation-delay: 1200ms;
+  }
+  
+  
+  
+  
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opactiy: 0;
+    }
+  }
+
+
+@keyframes rd-layer1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes rd-layer2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+@keyframes rd-layer3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:155%; }
+    to {background-position: -100px 0px;background-size:100%;}
+}
+
+@keyframes slidein {
+    from {background-position: top;background-size:155%; }
+    to {background-position: -100px 0px;background-size:100%;}
+}
+
 .homeSubscribe {
     width: calc(100% - 40px);
     margin: 20px auto;
 
     &__top-section {
-        background: url(../images/subscribe-background.jpg) center top no-repeat;
-        padding: 50px;
+        background: url(../images/subscribe-background-new.jpg) center top no-repeat;
+        padding: 109px 50px 50px 50px;
         color: $white;
         border-radius: 360px 80px 360px 80px;
         background-size: cover;
+        position: relative;
+
+        /*background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;*/
+
+    }
+    &__round-animations {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        .rd-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rd-layer1 {
+            img {
+                animation: rd-layer1 5s linear infinite;
+            }
+        }
+        .rd-layer2 {
+            img {
+                animation: rd-layer2 5s linear infinite;
+            }
+        }
+        .rd-layer3 {
+            img {
+                animation: rd-layer3 5s linear infinite;
+            }
+        }
     }
     &__grantsiren-logo {
         width: 100%;
@@ -1324,6 +1436,97 @@
         img {
             max-width: 579px;
             width: 100%;
+        }
+    }
+    &__layers {
+        display: flex;
+        grid-gap: 5px;
+        max-width: 579px;
+        margin: 0 auto;
+        position: relative;
+        &.aos-animate {
+            >span {
+                transform: translate(0px, 0) !important;
+                opacity: 1;
+            }
+            .wifi {
+                opacity: 1;
+            }
+        }
+        >span {
+            transition: 0.8s all;
+            opacity: 0; 
+            transition-delay: 0.2s; 
+        }
+        .layer1 {
+            transform: translate(0px, 50px);
+        }
+        .layer2 {
+            margin-right: -6px;
+            margin-left: 3px;
+            transform: translate(0px, -50px); 
+        }
+        .layer3 {
+            transform: translate(0px, 50px);
+        }
+        .layer4 {
+            transform: translate(0px, -50px);
+        }
+        .layer5 {
+            margin-top: -17px;
+            transform: translate(0px, 50px);
+        }
+        .layer6 {
+            transform: translate(0px, -50px);
+        }
+        .layer7 {
+            margin-top: -22px;
+            transform: translate(0px, 50px);
+        }
+        .layer8 {
+            margin: 0 -4px 0 5px;
+            transform: translate(0px, -50px);
+        }
+        .layer9 {
+            transform: translate(0px, 50px);
+        }
+        .layer10 {
+            transform: translate(0px, -50px);
+        }
+        .layer11 {
+            width: 26px;
+            margin-left: 4px;
+            margin-top: 2px;
+            opacity: 0;
+        }
+        .wifi {
+            position: absolute;
+            left: 62%;
+            top: -41%;
+            opacity: 0;
+            transition: 0.4s all;
+            transition-delay: 1s;
+            
+            span {
+                position: absolute;
+            }
+            .line1 {
+                width: 19px;
+            } 
+            .line2{
+                width: 27px;
+                top: -8px;
+            }
+            .line3{
+                width: 32px;
+                top: -15px;
+                left: 3px;
+            }
+            .line4{
+                width: 40px;
+                top: -23px;
+                left: 5px;
+            }
         }
     }
     &__flex {
@@ -1458,8 +1661,8 @@
         max-width: 380px;
         border: 1px solid #fdc2d6;
         border-radius: 16px;
-        margin-bottom: 35px;
         margin: 0 auto;
+        margin-bottom: 35px;
         position: relative;
 
         &:after {
@@ -1576,7 +1779,7 @@
             height: 426px;
             mix-blend-mode: difference;
             background-size: 130%;
-            z-index: -1;
+            z-index: -1; 
         }
     }
     .swiper-3d {
@@ -1584,7 +1787,17 @@
             display: none;
         }
     }
+    .swiper-slide-active {
+        .homeSubscribe__navigation {
+            opacity: 1;
+        }
+    }
     &__navigation {
-        margin: -24px 0 0 0;
+        margin: 0;
+        position: absolute;
+        bottom: -22px;
+        width: 100%;
+        left: 0;
+        opacity: 0;
     }
 }

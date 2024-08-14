@@ -25,7 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<!-- // Google Fonts -->
 
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?856766" rel="stylesheet">
+	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?8567755" rel="stylesheet">
 
 
 </head>
@@ -33,6 +33,16 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+
+	<!-- <div class="sticky-panel">
+		<span>Let’s Talk Grants</span>
+		<span class="sticky-link"></span>
+		<span><a href="mailto:hello@grantwriters.net">hello@grantwriters.net</a>  |  <a href="tel:5053264245">(505) 326-4245</a></span>
+		<div class="back-to-top">
+			<a href="#"><img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/back-to-top.svg" alt="" ></a>
+		</div>
+	</div> -->
+
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'grantwriter' ); ?></a>
 
 	<header id="masthead" class="site-header">

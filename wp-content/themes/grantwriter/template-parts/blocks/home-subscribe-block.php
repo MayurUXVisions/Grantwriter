@@ -1,8 +1,33 @@
 <section class="homeSubscribe">
     <div class="homeSubscribe__top-section">
-        <div class="container">
-            <div class="homeSubscribe__grantsiren-logo" data-aos="fade-up" data-aos-delay="200">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/grant-siren-logo.svg" alt="">
+        <div class="homeSubscribe__round-animations">
+            <div class="rd-layer rd-layer1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-1.png" alt=""></div>
+            <div class="rd-layer rd-layer2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-2.png" alt=""></div>
+            <div class="rd-layer rd-layer3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-3.png" alt=""></div>
+        </div> 
+        <div class="container"> 
+            <div class="homeSubscribe__grantsiren-logo">
+                <div class="homeSubscribe__layers" data-aos data-aos-delay="200">
+                    <span class="layer1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector.svg" ></span>
+                    <span class="layer2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-1.svg" ></span>
+                    <span class="layer3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-2.svg" ></span>
+                    <span class="layer4"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-3.svg" ></span>
+                    <span class="layer5"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-4.svg" ></span>
+                    <span class="layer6"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-5.svg" ></span>
+                    <span class="layer7"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-6.svg" ></span>
+                    <span class="layer8"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-7.svg" ></span>
+                    <span class="layer9"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-8.svg" ></span>
+                    <span class="layer10"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-9.svg" ></span>
+                    <span class="layer11"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tm.svg" ></span>
+                    
+                    <div class="wifi">
+                        <span class="line1 semi semi1 animated1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-10.svg" ></span>
+                        <span class="line2 semi semi1 animated2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-11.svg" ></span>
+                        <span class="line3 semi semi1 animated3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-12.svg" ></span>
+                        <span class="line4 semi semi1 animated4"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-13.svg" ></span>
+                    </div>
+
+                </div>
             </div>
             <div class="homeSubscribe__flex">
                 <div class="homeSubscribe__icon-cl"  data-aos="fade-up" data-aos-delay="300">
@@ -80,7 +105,13 @@
                                         <li>Weekly Grants Digest</li>
                                         <li>10% Savings on GrantWriters’s Services</li>
                                     </ul>
-                                    <a class="btn pink-btn" href="#">Select Grant Siren Catalyst</A>
+                                    <a class="btn pink-btn checkout-btn" href="javascript:void(0)">Select Grant Siren Catalyst</a>
+
+                                    <div class="grant-alerts__navigation homeSubscribe__navigation">
+                                        <div class="swiper-button-next">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/black-next-arrow.svg" alt="" >
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -102,7 +133,16 @@
                                         <li>Unlimited Grant Database Search</li>
                                         <li>Free Grant Consults <i>(one click access)</i></li>
                                     </ul>
-                                    <a class="btn pink-btn" href="#">Select Grant Siren Explorer</A>
+                                    <a class="btn pink-btn checkout-btn" href="javascript:void(0)">Select Grant Siren Explorer</a>
+
+                                    <div class="grant-alerts__navigation homeSubscribe__navigation">
+                                        <div class="swiper-button-prev">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/black-prev-arrow.svg" alt="" >
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/black-next-arrow.svg" alt="" >
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -125,7 +165,13 @@
                                         <li>Grant Alert Notifications</li>
                                         <li>Unlimited Grant Database Search</li>
                                     </ul>
-                                    <a class="btn pink-btn" href="#">Select Grant Siren Catalyst</A>
+                                    <a class="btn pink-btn checkout-btn" href="javascript:void(0)">Select Grant Siren Catalyst</A>
+
+                                    <div class="grant-alerts__navigation homeSubscribe__navigation">
+                                        <div class="swiper-button-prev">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/black-prev-arrow.svg" alt="" >
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -135,16 +181,16 @@
                                     <div class="checkout">
                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/checkout.jpg" alt="">
                                     </div>
+
+                                    <div class="grant-alerts__navigation homeSubscribe__navigation back-to-first">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cancel.svg" alt="" > 
+                                    </div>
                                 </div>
                             </div>
                         </div> 
 
 
-                        <div class="grant-alerts__navigation homeSubscribe__navigation">
-                            <div class="swiper-button-next">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/black-next-arrow.svg" alt="" >
-                            </div>
-                        </div>
+                        
 
                     </div>
                 </div>

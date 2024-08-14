@@ -41,7 +41,7 @@
                 <h4>Nonprofit Incorporation</h4>
                 <p>Become Grant Eligible with Nonprofit Formation</p>
 
-                <div class="service-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/services-img1.jpg" alt="" ></div>
+                <div class="service-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/services-img4.jpg" alt="" ></div>
             </div>
         </div>
 

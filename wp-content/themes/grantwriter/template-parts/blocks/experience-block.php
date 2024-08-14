@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5" data-aos="fade-left">
+            <div class="col-md-5" data-aos="zoom-in">
                 <div class="experience-block__imagebox" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/we-disagree-image.png);">
                     <span>They say winning Isn’t everything?</span>
                     <div class="experience-block__disagree-text">We Disagree</div>
