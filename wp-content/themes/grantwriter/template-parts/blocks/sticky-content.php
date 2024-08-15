@@ -8,7 +8,12 @@
 				</div>
 			</div>
 			<div class="sticky-content__text">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-image.jpg" alt="" >
+
+				<div class="sticky-content__video">
+					<a href="<?php echo site_url(); ?>/wp-content/uploads/2024/08/gw-homehero.mp4" data-fancybox="" class="play-video"></a>
+					<img data-aos="zoom-in" src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-image.jpg" alt="" >
+				</div>
+				
 				<h5>Our mission is your grant award success...</h5>
 				<p>GrantWriters’ organizational purpose is to connect community agencies with relevant, accessible, award-winning grants through our quality affordable services. We don’t waste time with small, risky grants or those with a limited history of success. Rather, we target high-yield grants we know our clients can competitively win. Big awards, capacity growth, and the sustainability of each and every client are why we are here. </p>
 				<p>We are deadline-friendly advocates, willing to work around the clock if it means an award-worthy grant could bring positive change to client communities. Despite the fast-paced nature of grant writing, our proposal quality is not a problem. This is because our writers are industry experts with an average of 25 years of grant experience. As professionals, we know deadlines, planning, forms, budgets, and partner documentation are all a part of our job. We strive to work efficiently to reduce these common stressors on our clients. Regardless of deadline, these all must be properly developed with a “can do”, “ready-to-win” attitude. </p>

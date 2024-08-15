@@ -118,11 +118,11 @@
 			</div>
 
 			
-			<div class="grant-alerts__navigation">
-                <div class="swiper-button-prev"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-left-arrow.svg" alt="" ></div>
-                <div class="swiper-button-next"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-right-arrow.svg" alt="" ></div>
+			<!-- <div class="grant-alerts__navigation">
+                <div class="swiper-button-prev"><img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/slider-left-arrow.svg" alt="" ></div>
+                <div class="swiper-button-next"><img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/slider-right-arrow.svg" alt="" ></div>
             </div>
-			
+			 -->
 			</div>
 		</section></div>
         </div>

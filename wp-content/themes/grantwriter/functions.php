@@ -155,7 +155,7 @@ function grantwriter_scripts() {
     wp_enqueue_script( 'mCustomScrollbar-js', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.js', array(), _S_VERSION, true ); 
 	wp_enqueue_script( 'fancybox-js', get_template_directory_uri() . '/js/fancybox.umd.js', array(), _S_VERSION, true ); 
 	  
-	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=951', array(), _S_VERSION, true );
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=9856681', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -349,6 +349,30 @@ function my_acf_blocks_init() {
             'title'             => __('Why Grantwriters'),
             'description'       => __('A Why Grantwriters Block.'),
             'render_template'   => 'template-parts/blocks/why-grantwriters.php',
+            'category'          => 'formatting', 
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'leader-block',
+            'title'             => __('Leader Block'),
+            'description'       => __('A Leader Block.'),
+            'render_template'   => 'template-parts/blocks/leader-block.php',
+            'category'          => 'formatting', 
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'we-write-grants',
+            'title'             => __('We Write Grants'),
+            'description'       => __('A We Write Grants Block.'),
+            'render_template'   => 'template-parts/blocks/we-write-grants.php',
+            'category'          => 'formatting', 
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'client-stories',
+            'title'             => __('Client Stories'),
+            'description'       => __('A Client Stories Block.'),
+            'render_template'   => 'template-parts/blocks/client-stories.php',
             'category'          => 'formatting', 
         ));
 		

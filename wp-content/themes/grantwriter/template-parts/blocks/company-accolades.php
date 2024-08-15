@@ -4,7 +4,7 @@
 		<div class="sticky-content__row">
 			<div class="sticky-content__left">
 				<div class="sticky-content__floating">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-image2.jpg" alt="" >
+					<img data-aos="zoom-in" src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-image2.jpg" alt="" >
 				</div>
 			</div> 
 			<div class="sticky-content__text">

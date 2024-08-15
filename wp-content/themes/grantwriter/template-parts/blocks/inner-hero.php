@@ -19,12 +19,20 @@ $allowedBlocks = [ 'core/heading', 'core/paragraph'];
 		<div class="inner-hero__flex" data-aos="fade-up">
 			<InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" allowedBlocks="<?php echo esc_attr(wp_json_encode($allowedBlocks)); ?>" />
 		</div>
+
+        <div class="inner-hero__animation white-version">
+            <div class="round-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round-white-text.svg" alt="" ></div>
+            <div class="round-arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round.svg" alt="" ></div>
+        </div>
 	</div>
     
-    <div class="inner-hero__animation">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round.svg" alt="" >
+    <div class="inner-hero__animation black-version">
+        <div class="round-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round-black-text.svg" alt="" ></div>
+        <div class="round-arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/round.svg" alt="" ></div>
     </div>
+    
 </section>
+
 <div class="breadcrumbs">
     <div class="container">Home  |  <span><?php the_title(); ?></span></div>
 </div>

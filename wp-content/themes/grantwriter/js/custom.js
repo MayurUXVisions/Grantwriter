@@ -36,14 +36,13 @@ jQuery(document).ready(function (e) {
 
 setTimeout(function() { 
   AOS.init({
-    once: true,
     duration: 800,
     offset: 220,
   });
 }, 200);
 
 jQuery('.wp-block-media-text__content').attr('data-aos', 'fade-up');
-jQuery('.wp-block-media-text__media').attr('data-aos', 'fade-up');
+jQuery('.wp-block-media-text__media').attr('data-aos', 'zoom-in');
 
 
 });
@@ -105,8 +104,9 @@ let FooterSwiperTop = new Swiper('.footer-marquee', {
 var carouselslider = new Swiper('.carousel-slider', {
   spaceBetween: 0,
   centeredSlides: false,
+  speed: 5000,
   autoplay: {
-    delay: 9500,
+    delay: 0, 
     disableOnInteraction: false,
   },
   navigation: {
@@ -135,12 +135,13 @@ var carouselslider = new Swiper('.carousel-slider', {
 });
 
 /* Wins Slider */
-var carouselslider = new Swiper('.client_wins-slider', {
+var winscarouselslider = new Swiper('.client_wins-slider', {
   spaceBetween: 0,
   slidesPerView: 4,
   centeredSlides: false,
+  speed: 5000,
   autoplay: {
-    delay: 9500,
+    delay: 0,
     disableOnInteraction: false,
   },
   navigation: {
@@ -151,26 +152,35 @@ var carouselslider = new Swiper('.client_wins-slider', {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
-  loop: true,
-  breakpoints: {
-    1024: {
-      slidesPerView: 4
-    },
-    768: {
-      slidesPerView: 2
-    },
-    640: {
-      slidesPerView: 1
-    },
-    320: {
-      slidesPerView: 1
-    }
-  }
+  loop: true
 });
 
 
+/* Client Stories Slider */
+var storiescarouselslider = new Swiper('.client-stories-slider', {
+  spaceBetween: 0,
+  slidesPerView: 3,
+  centeredSlides: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  loop: true
+});
+
+
+
+
 /* Grant Alerts */
-var carouselslider = new Swiper('.clientExp-slider', {
+var expcarouselslider = new Swiper('.clientExp-slider', {
   spaceBetween: 0,
   slidesPerView: 'auto', 
   centeredSlides: false,

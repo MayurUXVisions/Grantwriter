@@ -1,0 +1,100 @@
+.client-stories {
+    padding: 75px 0;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background: rgb(247,247,247);
+    background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 80px;
+    .gradient-heading {
+        font-size: 160px; 
+        text-shadow: 1px 1px 2px rgb(245 245 245), 1px -2px 2px rgb(191 191 191 / 20%);
+    }
+    .ghost-btn {
+        margin-bottom: 8px;
+    }
+    .client_wins__headline {
+        margin-bottom: 35px;
+        h2 {
+            padding-left: 0;
+        }
+        h3 {
+            padding-left: 0;
+        }
+    }
+    .swiper-horizontal {
+        overflow: hidden;
+        padding: 0 0 0 12px;
+    }
+    .col-md-4 {
+        padding-right: 0;
+        justify-content: end;
+        display: flex;
+    }
+    .swiper-slide {
+        height: auto;
+    }
+    .grant-alerts__date {
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        .newg {
+            color: #C1C1C1;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    &__box { 
+        background-color: #FBFBFB;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.05);
+        transition: 0.5s all;
+        border-radius: 8px;
+        max-width: 370px; 
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin-top: 17px;
+        &:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+            .client-stories__image {
+                > img {
+                    transform: scale(1.1); 
+                }
+            }
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.3;
+        padding: 20px 20px 24px 20px;
+        h4 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+            font-weight: 300;
+        }
+        p {
+            margin-bottom: 18px;
+        }
+        .link-btn {
+            font-size: 18px;
+            position: absolute;
+            bottom: 6px;
+        }
+    }
+    &__image {
+        position: relative;
+        overflow: hidden;
+        >img {
+            height: 282px;
+            object-fit: cover;
+            width: 100%;
+            transition: 0.3s all;
+        }
+    }
+    &__badge {
+        position: absolute;
+        bottom: -20px;
+        right: 10px;
+    }
+}

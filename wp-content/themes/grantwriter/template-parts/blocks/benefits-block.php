@@ -13,9 +13,9 @@
             </div>
         </div>
 
-        <div class="benefits__block" data-aos="fade-up" data-aos-delay="300">
+        <div class="benefits__block" >
             <div class="row">
-                <div class="benefits__col-left">
+                <div class="benefits__col-left" data-aos="fade-up" data-aos-delay="300">
                     <div class="row">
                         <div class="benefits__q_col">
                             <div class="benefits__box">
@@ -50,11 +50,11 @@
                 <div class="benefits__col-right">
                     <div class="benefits__vert_box">
                         <div class="benefits__img">
-                            <img src="<?php echo site_url(); ?>/wp-content/uploads/2024/08/award-rate.png">
-                            <h4>Award Rate</h4>
-                            <span class="count">93%</span>
+                            <img data-aos="zoom-in" src="<?php echo site_url(); ?>/wp-content/uploads/2024/08/award-rate.png">
+                            <h4 data-aos="fade-up" data-aos-delay="300">Award Rate</h4>
+                            <span  data-aos="fade-up" data-aos-delay="300" class="count">93%</span>
                         </div>
-                        <div class="benefits__content">
+                        <div class="benefits__content" data-aos="fade-up" data-aos-delay="300">
                             <p>“Since writing for GrantWriters 5 years ago, I’ve prepared 28 grant proposals. All but 2 were awarded; resulting in $6.2 million.”</p>
                             <label>Grant Expert</label>
                         </div>
