@@ -8,8 +8,8 @@
             <div class="section-title-left">
                 <h3>Articles, News, Helpful Tips, and More</h3>
             </div>
-            <div class="section-title-right">
-                <a href="#" class="ghost-btn black-ghost">Access All Resources</a>
+            <div class="section-title-right text-right">
+                <a href="#" class="btn ghost-btn black-ghost">Access All Resources</a>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="resourcesBlock__listing content"  id="scrollbar">
+                    <div class="resourcesBlock__listing">
                         <div class="row">
                             
                             <div class="col-md-6">

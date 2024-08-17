@@ -1,7 +1,7 @@
 .service-cat-content {
-    padding: 55px 0;
+    padding: 3.43rem 0; 
     .cat-content-shorter {
-        padding: 70px 60px 106px 121px;
+        padding: 4.37rem 3.75rem 6.62rem 7.56rem;
         display: flex;
         justify-content: space-between;
         background: url(../images/large-line.svg) bottom center no-repeat;
@@ -9,13 +9,13 @@
 
         .cat-text {
             width: 49%;
-            font-size: 18px;
+            font-size: 1.12rem;
             letter-spacing: -0.02em;
-            margin-top: 20px;
+            margin-top: 1.25rem;
             h2 {
-                font-size: 40px;
+                font-size: 2.5rem;
                 line-height: 1.2;
-                margin-bottom: 20px;
+                margin-bottom: 1.25rem;
                 span {
                     color: $pink;
                 }
@@ -24,59 +24,59 @@
         .cat-image {
             width: 40%;
             img {
-                border-radius: 8px;
+                border-radius: 0.5rem;
             }
         }
     }
 }
 .our-services {
     padding: 0;
-
+    
     &__box {
-        padding: 35px;
-        max-width: 980px;
+        padding: 2.18rem;
+        max-width: 61.25rem;
         margin: 0 auto;
         background-color: #FBFBFB;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        box-shadow: 0 0.25rem 0.93rem rgba(0, 0, 0, 0.10);
         border: 1px solid $white;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         display: flex;
         align-items: center;
     }
     &__image {
-        max-width: 380px;
+        max-width: 23.75rem;
         width: 100%;
     }
     &__text {
-        width: calc(100% - 380px);
+        width: calc(100% - 23.75rem);
         padding-left: 50px;
 
         label {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-style: italic;
             font-family: $Palatino_Regular;
         }
         h3 {
-            font-size: 40px;
+            font-size: 2.5rem;
             letter-spacing: -0.02em;
             font-weight: 300;
-            margin: 0 0 20px 0;
+            margin: 0 0 1.25rem 0;
         }
         h4 {
             font-family: $Palatino_Regular;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 400;
-            margin: 0 0 15px 0;
+            margin: 0 0 0.93rem 0;
         }
     }
     &__btn {
-        font-size: 18px;
+        font-size: 1.12rem;
         position: relative;
-        padding-right: 45px;
-        padding-bottom: 5px;
+        padding-right: 2.81rem;
+        padding-bottom: 0.313rem;
         &:before {
             content: "";
-            width: calc(100% - 45px);
+            width: calc(100% - 2.81rem);
             height: 1px;
             background-color: $pink;
             position: absolute;
@@ -92,8 +92,8 @@
             margin: auto;
             background: url(../images/arrow.svg) center center no-repeat;
             transition: 0.3s all;
-            width: 33px;
-            height: 33px;
+            width: 2.06rem;
+            height: 2.06rem;
         }
         &:hover {
             color: $pink;

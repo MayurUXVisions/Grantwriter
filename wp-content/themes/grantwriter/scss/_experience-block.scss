@@ -1,0 +1,98 @@
+.experience-block {
+    width: 100%;
+
+    h2 {
+        margin: 0 0 -1.1rem 0;
+        color: $darkpink;
+        position: relative;
+        z-index: 9;
+        strong {
+            font-weight: 600;
+            color: $darkpink; 
+        }
+    }
+    .experience-gl {
+        position: relative; 
+        &:before { 
+            position: absolute;
+            left: -14rem;
+            bottom: -11rem;
+            content: "";
+            width: 36.25rem;
+            height: 36.25rem;
+            background: url(../images/ellipse11.png) center center no-repeat;
+            z-index: -1;
+            mix-blend-mode: difference;
+        }
+    }
+    .experience-imagebox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__graybox {
+        padding: 4.25rem 1.87rem 4.56rem 1.87rem;
+        background-color: #F7F7F7;
+        text-align: center;
+        border-radius: 0.75rem;
+        color: $gray;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    &__funds {
+        .number {
+            font-size: 4.37rem;
+            font-weight: 600;
+            color: $pink;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+    }
+    &__row {
+        margin-top: 2.5rem;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &__number {
+        font-weight: 100;
+        font-size: 3.75rem;
+        color: $black;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    &__imagebox {
+        height: 100%;
+        padding: 1.75rem 2.93rem;
+        color: $white;
+        font-size: 1.87rem; 
+        font-weight: 600;
+        border-radius: 0.75rem;
+        position: relative;
+        overflow: hidden;
+        span {
+            max-width: 15.62rem;
+            display: inline-block;
+            line-height: 1.3;
+            position: relative;
+        }
+    }
+    &__disagree-text {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 3.125rem;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 3.125rem;
+        text-shadow: 2px 0.188rem 2px #00000036;
+        text-align: right;
+        color: $pink;
+        max-width: 16.25rem;
+        line-height: 0.9;
+        display: inline-block;
+    }
+}

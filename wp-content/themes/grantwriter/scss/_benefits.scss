@@ -1,18 +1,23 @@
 .benefits{
     &__section{
         width: 100%;
+        overflow: hidden;
         background: rgb(246,246,246);
         background: linear-gradient(180deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%);
-        padding: 9rem 0 1rem 0;
+        padding: 11rem 0 5rem 0;
         margin-top: -8rem; 
         .section-title {
-            margin-bottom: 35px;
+            margin-bottom: 2.18rem;
         }
         .gradient-heading { 
             text-shadow: 1px 1px 2px rgb(245 245 245), 1px -2px 2px rgb(191 191 191 / 20%);
         }
+        .section-title-left {
+            padding-left: 1rem;
+            margin-top: -1rem;
+        }
         .section-title-right {
-            margin-top: -30px;
+            margin-top: -1.87rem;
             p {
                 margin-bottom: 0;
             }
@@ -20,9 +25,32 @@
     }
     &__block{
         width: 100%;
+        position: relative; 
+        &:before { 
+            position: absolute;
+            left: -14rem;
+            bottom: -11rem;
+            content: "";
+            width: 36.25rem;
+            height: 36.25rem;
+            background: url(../images/ellipse11.png) center center no-repeat;
+            mix-blend-mode: difference;
+        }
+        &:after { 
+            position: absolute;
+            right: -14rem;
+            bottom: -11rem;
+            content: "";
+            width: 36.25rem;
+            height: 36.25rem;
+            background: url(../images/ellipse11.png) center center no-repeat;
+            mix-blend-mode: difference;
+        }
         .row{
             margin-left: -0.625rem;
             margin-right: -0.625rem;
+            position: relative;
+            z-index: 9;
             > div{
                 padding: 0 0.625rem 1.25rem;
             }
@@ -64,12 +92,14 @@
         background-color: $white;
         border-radius: 0.5rem;
         height: calc(100% - 1.25rem);
+        overflow: hidden;
     }
     &__img{
         width: 100%;
         height: 20rem;
         object-fit: cover;
         position: relative;
+        overflow: hidden;
         h4{
             position: absolute;
             bottom: 0;

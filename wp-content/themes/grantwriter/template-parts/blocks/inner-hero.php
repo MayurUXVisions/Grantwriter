@@ -12,11 +12,23 @@ $template = [
 ];
 $allowedBlocks = [ 'core/heading', 'core/paragraph'];
 ?>
-<?php $banner_image = get_field( 'banner_image' ); ?>
+<?php 
+    $banner_image = get_field( 'banner_image' ); 
+    $hero_banner_video = get_field( 'inner_hero_banner_video' );
+?>
 
 <section class="inner-hero">
 	<div class="inner-hero__bg" <?php if ( $banner_image ) : ?>style="background-image: url(<?php echo esc_url( $banner_image['url'] ); ?>);"<?php endif; ?>>
-		<div class="inner-hero__flex" data-aos="fade-up">
+		
+        <?php if ( $hero_banner_video ) : ?>
+        <div class="inner-hero__video">
+			<video loop="true" preload="none" autoplay="autoplay" muted="" playinline="" playsinline="" webkit-playsinline="">
+				<source src="<?php echo esc_url( $hero_banner_video['url'] ); ?>" type="video/mp4">
+			</video>
+		</div>
+        <?php endif; ?>
+
+        <div class="inner-hero__flex" data-aos="fade-up">
 			<InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" allowedBlocks="<?php echo esc_attr(wp_json_encode($allowedBlocks)); ?>" />
 		</div>
 
@@ -33,7 +45,7 @@ $allowedBlocks = [ 'core/heading', 'core/paragraph'];
     
 </section>
 
-<div class="breadcrumbs">
-    <div class="container">Home  |  <span><?php the_title(); ?></span></div>
-</div>
+<div class="breadcrumbs"> 
+    <div class="container"><a href="#">Home</a>  |  <span><?php the_title(); ?></span></div>
+</div> 
 

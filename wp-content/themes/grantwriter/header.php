@@ -25,7 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<!-- // Google Fonts -->
 
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?88955567755" rel="stylesheet">
+	<link href="<?php echo get_stylesheet_directory_uri(); ?>/scss/style.css?82126687655" rel="stylesheet">
 
 
 </head>
@@ -52,7 +52,20 @@
 				<div class="head-left">
 					<div class="logo"><?php the_custom_logo(); ?></div>
 					<div class="local-grant">
-						<a href="#">Local Grants</a>
+						<div class="search-px">
+						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+							<label>
+								<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+								<input type="search" class="search-field"
+									placeholder="<?php echo esc_attr_x( 'Search Grants', 'placeholder' ) ?>"
+									value="<?php echo get_search_query() ?>" name="s"
+									title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+							</label>
+							<input type="submit" class="search-submit"
+								value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+						</form>
+
+						</div>
 					</div>
 				</div>
 				<nav id="site-navigation" class="main-navigation">

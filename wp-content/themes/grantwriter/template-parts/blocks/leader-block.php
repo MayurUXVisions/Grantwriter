@@ -1,9 +1,11 @@
 
 <section class="leader-block">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 leader-block__img"><img data-aos="zoom-in" src="<?php echo get_stylesheet_directory_uri(); ?>/images/d.montgomery.jpg" alt="" ></div>
-            <div class="col-md-6 leader-block__text">
+        <div class="leader-block__row align-items-center">
+            <div class="leader-block__img">
+                <img class="animate-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/d.montgomery.jpg" alt="" >
+            </div>
+            <div class="leader-block__text">
                 <h2>A Diverse Team, with One
                 <span>Unstoppable</span> Leader</h2>
                 <p>“I love writing grants and am passionate about the amazing impact GrantWriters has on so many communities. I have successfully written grants for 30 years and have served both startup nonprofits and large institutions. I have an impeccable award rate with a hundred million dollars (+) in grant wins.</p>

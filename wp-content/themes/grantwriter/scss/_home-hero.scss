@@ -1,0 +1,89 @@
+.home-hero {
+    color: $white; 
+    padding: 0 1.25rem; 
+    &__bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2.188rem 0 6.625rem 0;
+        height: 45rem;
+        display: flex;
+        align-items: end;
+        border-radius: 0 0 5rem 5rem;
+        background-position: center center;
+        position: relative;
+        overflow: hidden;
+    }
+    &__video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+            content: "";
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            opacity: 0.4;
+            content: "";
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block; 
+        }
+    }
+    &__flex {
+        h1 {
+            margin-bottom: 0.875rem;
+            margin-top: 0.5rem;
+            max-width: 40rem;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+            font-size: 1.125rem;
+            position: relative;
+            padding-right: 1.875rem;
+            margin-right: 1.25rem;
+            list-style-type: none;
+            padding-bottom: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 0.938rem;
+                height: 0.938rem;
+                background: url(../images/star.svg) center center no-repeat;
+            }
+            &:last-child {
+                padding-right: 0;
+                margin-right: 0;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

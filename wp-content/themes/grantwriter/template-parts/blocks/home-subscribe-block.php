@@ -1,10 +1,5 @@
 <section class="homeSubscribe">
     <div class="homeSubscribe__top-section">
-        <div class="homeSubscribe__round-animations">
-            <div class="rd-layer rd-layer1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-1.png" alt=""></div>
-            <div class="rd-layer rd-layer2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-2.png" alt=""></div>
-            <div class="rd-layer rd-layer3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ellipse-round-3.png" alt=""></div>
-        </div> 
         <div class="container"> 
             <div class="homeSubscribe__grantsiren-logo">
                 <div class="homeSubscribe__layers" data-aos data-aos-delay="200">
@@ -26,12 +21,12 @@
                         <span class="line3 semi semi1 animated3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-12.svg" ></span>
                         <span class="line4 semi semi1 animated4"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector-13.svg" ></span>
                     </div>
+                </div> 
 
-                </div>
+                <h2 data-aos="fade-up">Subscribe & Never Miss Grant Deadlines Again</h2>
             </div>
             <div class="homeSubscribe__flex">
                 <div class="homeSubscribe__icon-cl"  data-aos="fade-up" data-aos-delay="300">
-                    <h2>Subscribe & Never miss Grant Deadlines Again</h2>
                     <div class="icon-mainCl">
                         <div class="icon-repeat">
                             <div class="icon-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/subscribe-icon1.svg" alt="" ></div>

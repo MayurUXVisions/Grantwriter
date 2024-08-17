@@ -1,0 +1,108 @@
+.inner-hero {
+    color: $white;
+    padding: 0 1.25rem; 
+    position: relative;
+    &__bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 8.75rem 0 6.62rem 0;
+        height: 36.25rem;
+        display: flex;
+        align-items: center; 
+        border-radius: 0 0 5rem 5rem;
+        background-position: center center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.4; 
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__flex {
+        max-width: 40.62rem;
+        margin: 0 auto;
+        font-size: 1.87rem;
+        position: relative;
+        z-index: 9;
+        h1 {
+            margin-bottom: 0.875rem;
+            margin-top: 0.5rem;
+            max-width: 100%;
+            font-size: 4.37rem;
+            line-height: 1;
+            letter-spacing: 0.2px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:after, &:before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+            }
+            &:before {
+                background: url(../images/star.svg) center center no-repeat;
+                margin-right: 30px;
+            }
+            &:after {
+                background: url(../images/star.svg) center center no-repeat;
+                margin-left: 30px;
+            }
+        }
+        .column-text {
+            font-weight: 300;
+            color: #E4E3E3;
+            line-height: 1.3;
+        }
+    }
+    &__animation {
+        position: absolute;
+        text-align: center;
+        width: 10rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .round-text {
+            position: absolute;
+            width: 10rem;
+            -webkit-animation: rotation-right 8s infinite linear;
+        }
+        .round-arrow {
+            img {
+                width: 4.31rem;
+            }
+        }
+        &.white-version {
+            bottom: -2.18rem;
+            z-index: 1;
+        }
+        &.black-version {
+            bottom: -2.18rem;
+            z-index: -1;
+        }
+    } 
+    &__video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block; 
+        }
+    }
+}

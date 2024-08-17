@@ -36,13 +36,13 @@ jQuery(document).ready(function (e) {
 
 setTimeout(function() { 
   AOS.init({
-    duration: 800,
+    duration: 400,
     offset: 220,
   });
 }, 200);
 
-jQuery('.wp-block-media-text__content').attr('data-aos', 'fade-up');
-jQuery('.wp-block-media-text__media').attr('data-aos', 'zoom-in');
+//jQuery('.wp-block-media-text__content').attr('data-aos', 'fade-up');
+//jQuery('.wp-block-media-text__media img').attr('class', 'animate-image');
 
 
 });
@@ -73,11 +73,14 @@ if (jQuery('#counter').length) {
 
 /* Trusted Logo */
 let SwiperTop = new Swiper('.trustedSwiper', {
-    spaceBetween: 0,
+    spaceBetween: 20,
     centeredSlides: true,
-    speed: 5000,
+    freeMode: true,
+    speed: 4000,
+    loopAddBlankSlides:true,
     autoplay: {
       delay: 0,
+      disableOnInteraction:false,
     },
     loop: true,
     slidesPerView:'auto',
@@ -101,6 +104,7 @@ let FooterSwiperTop = new Swiper('.footer-marquee', {
 
 
 /* Grant Alerts */
+
 var carouselslider = new Swiper('.carousel-slider', {
   spaceBetween: 0,
   centeredSlides: false,
@@ -132,7 +136,10 @@ var carouselslider = new Swiper('.carousel-slider', {
       slidesPerView: 1
     }
   }
+
 });
+
+
 
 /* Wins Slider */
 var winscarouselslider = new Swiper('.client_wins-slider', {
@@ -197,7 +204,8 @@ var expcarouselslider = new Swiper('.clientExp-slider', {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
-  loop: true
+  loop: true,
+  allowTouchMove: false
 });
 
 
@@ -236,6 +244,7 @@ var swiper = new Swiper(".card-carousel", {
 });
 
 
+/* Footer Dynamic Margin */
 function adjustContentMargin() {
   // Get the footer element
   var footer = document.getElementById('footer');
@@ -255,3 +264,116 @@ document.addEventListener("DOMContentLoaded", adjustContentMargin);
 
 // Adjust margin on window resize
 window.addEventListener("resize", adjustContentMargin);
+
+
+
+/* Search Active Code */
+const searchFields = document.querySelectorAll('.search-field');
+
+searchFields.forEach(function(field) {
+  // Add the 'active' class to the parent 'search-form' when the search field gains focus
+  field.addEventListener('focus', function() {
+    field.closest('.search-form').classList.add('search-active');
+  });
+
+  // Remove the 'active' class from the parent 'search-form' when the search field loses focus
+  field.addEventListener('blur', function() {
+    field.closest('.search-form').classList.remove('search-active');
+  });
+}); 
+
+
+
+
+// Select all elements with the class 'animate-image'
+const images = document.querySelectorAll('.animate-image');
+
+// Function to update the scale based on scroll
+const updateScaleOnScroll = () => {
+  images.forEach(image => {
+    const rect = image.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Calculate the visible percentage of the image
+    const visibleRatio = Math.max(0, Math.min(1, (windowHeight - rect.top) / windowHeight));
+
+    // Map the visible percentage to scale values (from 1.4 to 1)
+    const scaleValue = 1.4 - (visibleRatio * 0.4);
+
+    // Apply the scale transformation
+    image.style.transform = `scale3d(${scaleValue}, ${scaleValue}, ${scaleValue})`;
+  });
+};
+
+// Add scroll event listener
+window.addEventListener('scroll', updateScaleOnScroll);
+
+// Initial call to set scale on page load
+updateScaleOnScroll();
+
+
+
+
+/* Services Block Hover Code */
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceItems = document.querySelectorAll('.service-list-rp');
+  const thirdChild = serviceItems[2]; // Select the third child
+
+  // Function to remove active class from all items
+  function removeActiveClasses() {
+      serviceItems.forEach(item => {
+          item.classList.remove('service-active');
+      });
+  }
+
+  // Set the third child active by default
+  thirdChild.classList.add('service-active');
+
+  // Add hover event listeners to each item
+  serviceItems.forEach((item, index) => {
+      item.addEventListener('mouseover', function () {
+          removeActiveClasses(); // Remove active class from all items
+          item.classList.add('service-active'); // Add active class to the hovered item
+      });
+
+      item.addEventListener('mouseleave', function () {
+          removeActiveClasses(); // Remove active class from all items
+          thirdChild.classList.add('service-active'); // Reapply active class to the third child
+      });
+  });
+});
+
+
+
+/* clientExp Code */
+document.addEventListener('DOMContentLoaded', function () {
+  const clientExpBoxes = document.querySelectorAll('.clientExp__box');
+  const backgroundImg = document.querySelector('#background-img');
+
+  clientExpBoxes.forEach(box => {
+      box.addEventListener('mouseover', function () {
+          const imgElement = box.querySelector('.clientExp__real-img');
+          if (imgElement) {
+              const imgSrc = imgElement.getAttribute('src');
+              
+              // Check if the hovered image is different from the current background image
+              if (imgSrc && imgSrc.trim() !== '' && imgSrc !== backgroundImg.getAttribute('src')) {
+                  // Fade out the current image
+                  backgroundImg.style.opacity = 0;
+
+                  // Wait for the fade-out to complete before changing the src
+                  setTimeout(() => {
+                      backgroundImg.setAttribute('src', imgSrc);
+
+                      // Ensure the image has loaded before fading in
+                      backgroundImg.onload = () => {
+                          backgroundImg.style.opacity = 1; // Fade in the new image
+                      };
+                  }, 500); // Match this duration to the CSS transition duration
+              }
+          }
+      });
+  });
+});
+
+

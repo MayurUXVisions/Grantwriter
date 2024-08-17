@@ -50,7 +50,7 @@
                 <div class="benefits__col-right">
                     <div class="benefits__vert_box">
                         <div class="benefits__img">
-                            <img data-aos="zoom-in" src="<?php echo site_url(); ?>/wp-content/uploads/2024/08/award-rate.png">
+                            <img class="animate-image" src="<?php echo site_url(); ?>/wp-content/uploads/2024/08/award-rate.png">
                             <h4 data-aos="fade-up" data-aos-delay="300">Award Rate</h4>
                             <span  data-aos="fade-up" data-aos-delay="300" class="count">93%</span>
                         </div>

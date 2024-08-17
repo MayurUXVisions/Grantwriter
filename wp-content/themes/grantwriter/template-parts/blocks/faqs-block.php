@@ -8,8 +8,8 @@
             <div class="section-title-left">
                 <h3>Grant Questions?</h3>
             </div>
-            <div class="section-title-right">
-                <a href="#" class="ghost-btn black-ghost">Questions? Talk a grant expert</a>
+            <div class="section-title-right text-right">
+                <a href="#" class="btn ghost-btn black-ghost">Questions? Talk a grant expert</a>
             </div>
         </div> 
 

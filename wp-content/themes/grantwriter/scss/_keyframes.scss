@@ -1,0 +1,40 @@
+@-webkit-keyframes rotation-right {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opactiy: 0;
+    }
+}
+
+
+@keyframes rd-layer1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes rd-layer2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+@keyframes rd-layer3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:155%; }
+    to {background-position: -100px 0px;background-size:100%;}
+}
+
+@keyframes slidein {
+    from {background-position: top;background-size:155%; }
+    to {background-position: -100px 0px;background-size:100%;}
+}

@@ -1,19 +1,26 @@
 .why-grantwriters { 
-    padding: 35px 0; 
+    padding: 2.18rem 0; 
+    overflow: hidden;
     &__row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     } 
     &__left {
-        padding-right: 6%;
+        padding-right: 5%;  
         width: 40%;
+        p {
+            margin-bottom: 1.8rem;
+        }
     }
     &__right {
-        width: 60%;
+        width: 58%;
         position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
         img { 
             width: 100%;
-            border-radius: 8px;
+            border-radius: 0.5rem;
         }
         &:hover {
             .play-video {
@@ -23,9 +30,6 @@
             }
         }
     }
-    .ghost-btn {
-        min-width: initial;
-    } 
 }
 .play-video {
     position: absolute;
@@ -38,9 +42,9 @@
         position: absolute;
         content: "";
         background: url(../images/play.svg) center center no-repeat;
-        background-size: 85px;
-        width: 85px;
-        height: 85px;
+        background-size: 5.31rem;
+        width: 5.31rem;
+        height: 5.31rem;
         left: 0;
         top: 0;
         bottom: 0;
@@ -52,5 +56,44 @@
         &:after {
             transform: scale(1.2);
         }
+    }
+}
+
+.got-grant-qa {
+    .why-grantwriters__right {
+        padding-right: 0;
+    }
+    .why-grantwriters__left {
+        padding-left: 7%;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        font-weight: 300;
+        h2 {
+            line-height: 1.2;
+        }
+    }
+}
+
+
+.about-block {
+    .why-grantwriters__row {
+        position: relative;
+        &:before { 
+            position: absolute;
+            right: -18rem;
+            bottom: -5rem;
+            content: "";
+            width: 36.25rem;
+            height: 36.25rem;
+            background: url(../images/ellipse11.png) center center no-repeat;
+            mix-blend-mode: difference;
+        }
+    }
+}
+
+.video-block {
+    h2 {
+        margin-bottom: 0.5rem;
+        margin-top: -1.2rem;
     }
 }

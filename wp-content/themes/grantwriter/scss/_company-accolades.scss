@@ -1,0 +1,69 @@
+.company-accolades {
+    padding-top: 5.75rem;
+
+    h2 { 
+        font-size: 2.62rem;
+        @include breakpoint(sm) {
+            text-align: center;
+        }
+        strong {
+            font-weight: 300;
+            font-style: normal;
+            color: $darkpink;
+        }
+    }
+
+    .sticky-content__floating {
+        background: none;
+        padding: 0;
+        img {
+            border-radius: 16px; 
+        }
+    }
+
+    .company-accolades-rp {
+        color: #C1C1C1;
+        letter-spacing: 0.2px;
+        border-bottom: 1px solid #e3e3e3;
+        margin-bottom: 2.18rem;
+        padding-bottom: 2.18rem;
+        h3 {
+            color: $darkpink;
+            font-size: 1.81rem;
+            font-family: $Palatino_Regular;
+            letter-spacing: 1px;
+        }
+        &:last-child {
+            border: 0;
+            margin-bottom: 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .sticky-content__row {
+        justify-content: space-between;
+    }
+    .sticky-content__left {
+        width: 50%;
+        padding-right: 0;
+        @include breakpoint(sm) {
+            width: 100%;
+            max-width: 100%;
+        }
+        img {
+            width: 100%;
+            @include breakpoint(sm) {
+                height: 480px;
+                object-fit: cover;
+            }
+        }
+    }
+    .sticky-content__text {
+        width: 40%;
+
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+    }
+}

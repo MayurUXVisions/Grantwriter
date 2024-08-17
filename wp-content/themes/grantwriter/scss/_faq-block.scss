@@ -1,0 +1,76 @@
+.faqBlock {
+    padding: 4.3rem 0 0 0;
+    width: calc(100% - 2.5rem);
+    margin: 1.25rem;
+    border-radius: 5rem;
+    background-color: #F7F7F7;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 50px rgba(0,0,0,0.05);
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/radial-bg.svg) center left no-repeat;
+        width: 56.87rem;
+        height: 100%;
+        mix-blend-mode: difference; 
+    }
+    .gradient-heading {
+        margin-left: -0.25rem;
+        text-shadow: 1px 1px 2px rgb(245 245 245), 1px -2px 2px rgb(191 191 191 / 20%);
+    }
+    .section-title {
+        margin-bottom: 3rem; 
+    }
+    .section-title-left {
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 0;
+        width: 60%;
+        h3 {
+            margin: 0;
+        }
+    }
+    .section-title-right {
+        width: 40%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .faqs__box {
+        border-radius: 0;
+        &:after {
+            right: auto;
+            left: 1.43rem;
+        }
+        .faqs__title {
+            padding: 1.56rem 1.31rem 1.56rem 4.43rem;
+            height: auto;
+            min-height: auto;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            h4 {
+                text-align: left;
+            }
+        }
+        .faqs__text {
+            margin-top: 0;
+            padding: 0 4.5rem 1rem 4.5rem;
+            font-size: 1.12rem;
+            letter-spacing: 0.01em;
+            line-height: 1.55;
+        }
+        &.faq-active {
+
+            .faqs__title h4 {
+                color: $darkpink; 
+            }
+        }
+    }
+    .faqBlock-image {
+        text-align: right;
+        margin-bottom: -1.25rem;
+    }
+}

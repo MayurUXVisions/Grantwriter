@@ -1,0 +1,136 @@
+.grant-alerts {
+    padding: 6rem 0 9.25rem 0;
+    overflow: hidden;
+
+    .swiper-slide {
+        max-width: 25rem;
+    }
+    .swiper-wrapper{
+        transition-timing-function: linear !important;
+    }
+    &__headline {
+        margin-bottom: 2.5rem;
+        h2 {
+            color: $pink;
+            margin: 0;
+            padding-left: 1.5rem;
+            line-height: 1;
+            margin-top: -2rem;
+        }
+        h3 {
+            font-size: 5.62rem;
+            color: $pink;
+            margin: 0;
+            padding-left: 1.5rem;
+            line-height: 1;
+            font-weight: 300;
+        }
+    }
+    &__box {
+        background-color: $white;
+        box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
+        max-width: 23.75rem;
+        position: relative;
+        border-radius: 0.625rem;
+        transition: 0.3s all;
+        background-color: #FBFBFB;
+        border: 2px solid #fff;
+        &:hover {
+            box-shadow: 0 0.25rem 1.25rem rgba(0,0,0,0.15);
+
+            .grant-alerts__price::after {
+                background-image: url(../images/hover-arrow.svg);
+                transform: rotate(-45deg);
+            }
+            .grant-alerts__image img {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+    &__image {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 17.813rem;
+            object-fit: cover;
+            transition: 0.3s all;
+        }
+    }
+    &__text {
+        padding: 1rem 1.43rem;
+    }
+    &__date {
+        color: #C1C1C1;
+        font-size: 0.875rem;
+        margin-bottom: 0.188rem;
+        .newg {
+            background: url(../images/star2.svg) right center no-repeat;
+            padding-right: 1.625rem;
+            margin-right: 0.5rem;
+            color: $pink;
+            font-weight: 600;
+            font-style: italic;
+        } 
+    }
+    h4 {
+        font-size: 1.12rem;
+        font-weight: 300;
+        margin: 0;
+        letter-spacing: 0.02rem;
+    }
+    &__price {
+        color: #C1C1C1;
+        font-size: 0.75rem;
+        font-family: $default-font;
+        margin-top: 0.813rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0.56rem;
+            margin: auto;
+            background: url(../images/arrow.svg) center center no-repeat;
+            transition: 0.3s all;
+            width: 2.06rem;
+            height: 2.06rem; 
+        }
+        label {
+            font-family: $Palatino_Regular;
+            font-size: 2.5rem;
+            color: $black;
+            line-height: 1;
+            display: inline-block;
+            width: 100%;
+            font-weight: bold; 
+        }
+    }
+    &__navigation {
+        //position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.18rem;
+
+        .swiper-button-prev, .swiper-button-next {
+            position: static;
+            width: 2.56rem;
+            margin: 0 0.313rem;
+            &:after {
+                display: none;
+            }
+            img {
+                border-radius: 2rem;
+            }
+            &:hover {
+                img {
+                    background-color: $lightgrey;
+                }
+            }
+        }
+    }
+}

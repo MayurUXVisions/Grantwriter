@@ -4,11 +4,11 @@
             <div class="container">
                 <div class="gradient-heading">Client Wins</div>
                 <div class="row align-items-end">
-                    <div class="col-md-7">
+                    <div class="col-12 col-lg-7">
                         <h2>Grants Written and Won by</h2>
                         <h3>Our Grant Experts</h3>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-12 col-lg-5">
                         <p>GrantWriters’ is honored to share our recent grant wins made possible by the Grant Experts and our remarkable clients.</p>
                     </div>
                 </div>
