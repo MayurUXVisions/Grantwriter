@@ -5,12 +5,12 @@
             <div class="container">
                 <div class="gradient-heading">Client Stories</div>
                 <div class="row align-items-end">
-                    <div class="col-md-8">
+                    <div class="col-lg-8">
                         <h2>Transformative Grants for</h2>
                         <h3>Life Changing Clients</h3>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#" class="ghost-btn black-ghost">READ ALL STORIES</a>
+                    <div class="col-lg-4 text-right">
+                        <a href="#" class="btn ghost-btn black-ghost">READ ALL STORIES</a>
                     </div>
                 </div>
             </div> 

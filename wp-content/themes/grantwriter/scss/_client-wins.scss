@@ -1,13 +1,22 @@
 .client_wins { 
     padding: 3.125rem 0 3.125rem 0;
     overflow: hidden;
+    @include breakpoint(md) {
+        padding: 2rem 0 4rem 0;
+    }
     @include breakpoint(sm) {
-        padding: 2rem 0 3.125rem 0;
+        padding: 1rem 0 4rem 0;
     }
 
     .gradient-heading {
         font-size: 9rem;
     }
+    .container {
+        @include breakpoint(sm) {
+            width: 100%; 
+        }
+    }
+   
 
     &-slider {
         .swiper-wrapper{
@@ -20,22 +29,25 @@
             width: auto;
             position: relative;
             overflow: hidden;
-            padding: 0.8rem;
+            padding: 0.8rem; 
         }
     }
     &__headline {
         margin-bottom: 2.81rem;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             text-align: center;
             padding: 0 5%;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        @include breakpoint(sm) {
+            padding: 0;
         }
         h2 {
             margin: 0;
             padding-left: 1.93rem;
             line-height: 1;
             font-size: 2.62rem;
-            @include breakpoint(sm) {
+            @include breakpoint(md) {
                 font-size: 2.5rem;
             }
         }
@@ -55,12 +67,12 @@
             p:last-child {
                 margin-bottom: 0;
             }
-            @include breakpoint(sm) {
+            @include breakpoint(md) {
                 padding: 13px 25px 25px 25px;
                 text-align: center;
             }
             p {
-                @include breakpoint(sm) {
+                @include breakpoint(md) {
                     max-width: 550px;
                     margin: 0 auto;
                 }
@@ -74,7 +86,7 @@
         position: relative;
         height: 17.5rem;
         border-radius: 0.625rem;
-        padding: 0.93rem 1.87rem 0.75rem 1.87rem;
+        padding: 0.93rem 1rem 0.75rem 1.87rem;
         color: $white;
         transition: 0.3s all;
         display: flex;

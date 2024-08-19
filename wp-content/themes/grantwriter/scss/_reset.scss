@@ -13,7 +13,7 @@ html {
     @include breakpoint(md) {
         font-size: 13px; 
     }
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         font-size: 16px;
     }
 }
@@ -86,6 +86,9 @@ figcaption {
     margin-top: 0.938rem;
     letter-spacing: 0;
     color: $darkpink;
+    @include breakpoint(md) {
+        margin-top: 0.5rem;
+    }
 }
 
 %btn , input[type="submit"]{
@@ -191,7 +194,7 @@ h6 {
 }
 p {
     margin: 0 0 1.75rem;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         margin: 0 0 1.5rem;
     }
 }
@@ -313,13 +316,13 @@ textarea{
     margin: 0 auto;
     padding: 0 1.25rem; 
     
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         width: 51.25rem;
     }
-    @include breakpoint(md) {
-       
-    }
     @include breakpoint(sm) {
+       width: 39rem;
+    }
+    @include breakpoint(md) {
         
     }
     @include breakpoint(xs) {

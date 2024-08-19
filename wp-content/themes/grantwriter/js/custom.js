@@ -140,11 +140,10 @@ var carouselslider = new Swiper('.carousel-slider', {
 });
 
 
-
 /* Wins Slider */
 var winscarouselslider = new Swiper('.client_wins-slider', {
   spaceBetween: 0,
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   centeredSlides: false,
   speed: 5000,
   autoplay: {
@@ -158,8 +157,8 @@ var winscarouselslider = new Swiper('.client_wins-slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'progressbar',
-  },
-  loop: true
+  }, 
+  loop: true 
 });
 
 
@@ -180,7 +179,23 @@ var storiescarouselslider = new Swiper('.client-stories-slider', {
     el: '.swiper-pagination',
     type: 'progressbar',
   },
-  loop: true
+  loop: true,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: true
+    },
+    768: {
+      slidesPerView: 2,
+      centeredSlides: true
+    },
+    640: {
+      slidesPerView: 1
+    },
+    320: {
+      slidesPerView: 1
+    }
+  }
 });
 
 

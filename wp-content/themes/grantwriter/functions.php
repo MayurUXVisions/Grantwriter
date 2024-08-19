@@ -155,7 +155,7 @@ function grantwriter_scripts() {
     wp_enqueue_script( 'mCustomScrollbar-js', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.js', array(), _S_VERSION, true ); 
 	wp_enqueue_script( 'fancybox-js', get_template_directory_uri() . '/js/fancybox.umd.js', array(), _S_VERSION, true ); 
 	  
-	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=8576998', array(), _S_VERSION, true );
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom.js?Var=85247', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

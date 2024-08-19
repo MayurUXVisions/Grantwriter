@@ -1,8 +1,14 @@
 .we-write-grants {
     padding: 3.43rem 0;
+    @include breakpoint(md) {
+        padding: 3rem 0;    
+    }
+    @include breakpoint(sm) {
+        padding: 4rem 0 3rem 0;
+    }
 
     .row {
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             flex-direction: column-reverse;
         }
     }
@@ -11,9 +17,11 @@
         img {
             max-width: 30rem;
             border-radius: 1rem;
-            @include breakpoint(sm) {
+            @include breakpoint(md) {
                 max-width: 100%;
                 width: 100%;
+                height: 30rem;
+                object-fit: cover;
             }
         }
     }
@@ -23,8 +31,11 @@
         font-size: 1.5rem;
         letter-spacing: -0.02em;
         line-height: 1.3;
+        @include breakpoint(md) {
+            margin-top: 3rem; 
+        }
         @include breakpoint(sm) {
-            margin-top: 35px;
+            margin-top: 2rem; 
         }
         h2 {
             font-size: 2.5rem;
@@ -32,27 +43,72 @@
             span {
                 color: $darkpink;
                 display: flex;
+                @include breakpoint(md) {
+                    display: inline-block;
+                }
             }
         }
         h3 {
             font-size: 1.87rem;
             max-width: 23.75rem;
+            @include breakpoint(md) {
+                margin-bottom: 2.5rem;
+            }
+            @include breakpoint(sm) {
+                max-width: 28rem;
+            }
+        }
+
+        .wwg-layer2 {
+            @include breakpoint(md) {
+                margin-top: 4.5rem;
+            }
+        }
+        .wwg-layer3 {
+            @include breakpoint(md) {
+                margin-top: 3.5rem;
+            }
         }
     }
 
     .genres-items {
         width: 100%;
         display: flex;
-
+        flex-wrap: wrap;
+        .genres-item-rp {
+            @include breakpoint(md) {
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+            &:last-child {
+                max-width: 24rem;
+                ul {
+                    @include breakpoint(md) {
+                        column-count: 2;
+                    }
+                    
+                }
+            }
+        }
         ul {
             width: 50%;
             padding: 0;
             margin: 0;
+            @include breakpoint(md) {
+                width: 100%;
+                column-count: 3;
+            }
+            @include breakpoint(sm) {
+                column-count: 2;    
+            }
             li {
                 width: 100%;
                 list-style-type: none;
                 margin: 0;
                 padding-bottom: 1rem;
+                @include breakpoint(md) {
+                    padding-bottom: 0.4rem;
+                }
             }
         }
         .genres-headline {
@@ -61,6 +117,12 @@
             letter-spacing: -0.02em;
             font-weight: 600;
             padding-bottom: 0.875rem;
+            width: 100%;
+            display: inline-block;
+            @include breakpoint(md) {
+                padding-bottom: 0;
+                width: 100%;
+            }
         }
     }
 
@@ -73,9 +135,15 @@
 .includes {
     padding: 0;
     margin-bottom: 1.43rem;
+    @include breakpoint(md) {
+        column-count: 2;
+        max-width: 36.25rem;
+    }
     li {
         list-style-type: none;
         padding-bottom: 0.93rem;
-
+        @include breakpoint(md) {
+            padding-bottom: 0.5rem;
+        }
     }
 }

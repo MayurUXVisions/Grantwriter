@@ -1,10 +1,14 @@
 .company-accolades {
     padding-top: 5.75rem;
+    @include breakpoint(md) {
+        padding-top: 4rem !important;    
+    }
 
     h2 { 
         font-size: 2.62rem;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             text-align: center;
+            margin-bottom: 1rem;
         }
         strong {
             font-weight: 300;
@@ -47,13 +51,13 @@
     .sticky-content__left {
         width: 50%;
         padding-right: 0;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             width: 100%;
             max-width: 100%;
         }
         img {
             width: 100%;
-            @include breakpoint(sm) {
+            @include breakpoint(md) {
                 height: 480px;
                 object-fit: cover;
             }
@@ -62,8 +66,9 @@
     .sticky-content__text {
         width: 40%;
 
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             width: 100%;
+            margin-top: 1.5rem;
         }
     }
 }

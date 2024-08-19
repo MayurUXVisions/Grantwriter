@@ -6,6 +6,13 @@ header {
     .logo {
         width: 10.75rem;
     }
+    &.site-header {
+        .container {
+            @include breakpoint(md) {
+                width: 64.25rem;  
+            }
+        }
+    }
     .head-main {
         display: flex;
         justify-content: space-between;
@@ -23,7 +30,7 @@ header {
         position: relative;
         padding-left: 1.25rem;
         margin-left: 1.25rem;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             display: none;
         }
         &:before {
@@ -164,20 +171,20 @@ header {
 
 .mobile-search {
     display: none;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         display: block;
     } 
 }
 .mobile-items {
     display: none;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         display: flex;
-        grid-gap: 20px;
+        grid-gap: 30px;
     }
 }
 .main-menu {
     display: block;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         display: none; 
     }
 }

@@ -29,28 +29,32 @@
                 <div class="wwg-layer3">
                     <h3>We Write Grants from All Funding Sources and Genres</h3>
                     <div class="genres-items">
-                        <ul>
-                            <li class="genres-headline">Genres</li>
-                            <li>Agriculture</li>
-                            <li>Arts</li>
-                            <li>Community Service</li>
-                            <li>Economic Development</li>
-                            <li>Education</li>
-                            <li>Health</li>
-                            <li>Housing</li>
-                            <li>Social Services</li>
-                            <li>Transportation</li>
-                            <li>Workforce Development</li>
-                            <li>...and many more</li>
-                        </ul>
-                        <ul>
-                            <li class="genres-headline">Sources</li>
-                            <li>Community</li>
-                            <li>Federal</li>
-                            <li>Foundation</li>
-                            <li>Local</li>
-                            <li>State</li>
-                        </ul>
+                        <div class="genres-item-rp">
+                            <div class="genres-headline">Genres</div>
+                            <ul>
+                                <li>Agriculture</li>
+                                <li>Arts</li>
+                                <li>Community Service</li>
+                                <li>Economic Development</li>
+                                <li>Education</li>
+                                <li>Health</li>
+                                <li>Housing</li>
+                                <li>Social Services</li>
+                                <li>Transportation</li>
+                                <li>Workforce Development</li>
+                                <li>...and many more</li>
+                            </ul>
+                        </div>
+                        <div class="genres-item-rp">
+                            <div class="genres-headline">Sources</div>
+                            <ul>
+                                <li>Community</li>
+                                <li>Federal</li>
+                                <li>Foundation</li>
+                                <li>Local</li>
+                                <li>State</li>
+                            </ul>
+                        </div>
                     </div> 
                 </div>
 

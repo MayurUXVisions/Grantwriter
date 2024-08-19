@@ -3,12 +3,16 @@
     padding: 6.37rem 1.87rem 6.18rem 1.87rem;
     border-radius: 5rem;
     width: calc(100% - 2.5rem);
-    margin:80px auto;
+    margin:5rem auto;
+    @include breakpoint(md) {
+        margin:2rem auto;   
+        padding: 6rem 3.4rem 6.18rem 3.4rem; 
+    }
     
     &__row {
         display: flex;
         justify-content: space-between;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             flex-wrap: wrap;
         }
     }
@@ -17,14 +21,14 @@
         overflow: hidden;
         border-radius: 1rem;
         width: 42%;
-        @include breakpoint(sm) {
+        @include breakpoint(md) {
             width: 100%;
         }
         img {
             max-width: 30rem;
             border-radius: 1rem;
             width: 100%;
-            @include breakpoint(sm) {
+            @include breakpoint(md) {
                 height: 480px;
                 max-width: 100%;
                 object-fit: cover;
@@ -38,10 +42,13 @@
         font-weight: 200;
         letter-spacing: 0.01em;
         font-size: 1.12rem;
-        @include breakpoint(sm) {
-            margin-top: 20px;
-            padding: 0 14%;
+        @include breakpoint(md) {
+            margin-top: 1.25rem;
+            padding: 0 7%;
             width: 100%;
+        }
+        @include breakpoint(sm) {
+            padding: 0;
         }
 
         h2 {

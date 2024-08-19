@@ -177,6 +177,9 @@ footer {
     }
     .footer-copyright {
         background-color: #000;
+        @include breakpoint(sm) {
+            display: none;
+        }
         .footer-c-left {
             font-weight: 300;
             font-style: italic;

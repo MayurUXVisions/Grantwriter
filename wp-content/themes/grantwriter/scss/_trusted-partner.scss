@@ -1,5 +1,13 @@
 .trusted-partner {
     padding: 1.875rem 0;
+    .container {
+        @include breakpoint(md) {
+            width: 58rem;
+        }
+        @include breakpoint(sm) {
+            width: 39rem;
+        }
+    }
     &__flex {
         display: flex;
         align-items: center;
